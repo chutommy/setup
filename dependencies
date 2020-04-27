@@ -1,0 +1,8 @@
+vim-plug
+
+JSbeautify:
+    nodejs
+
+Deocomple
+    python3 path
+    gocode path
