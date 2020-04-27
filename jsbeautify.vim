@@ -1,9 +1,7 @@
 " === JSbeautify ===
 
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
-autocmd FileType json noremap <buffer> <c-f> :call JsonBeautify()<cr>
-autocmd FileType jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
-autocmd FileType go noremap <buffer> <c-f> :call HtmlBeautify()<cr>
-autocmd FileType gohtml noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+autocmd BufWritePost *javascript :call JsBeautify()
+autocmd BufWritePost *json :call JsonBeautify()
+autocmd BufWritePost *jsx :call JsxBeautify()
+autocmd BufWritePost *html :call HtmlBeautify()
+autocmd BufWritePost *css :call CSSBeautify()
