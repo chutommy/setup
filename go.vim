@@ -1,10 +1,3 @@
-" === GOEnv ===
-" /etc/profile
-" ~/.profile
-"export GOPATH=$HOME/go
-"export GOBIN=$HOME/go/bin
-"export PATH=/usr/local/go/bin:$GOBIN:$PATH
-
 " === Go ===
 
 au FileType go nmap <leader>rt <Plug>(go-run-tab)
