@@ -8,7 +8,7 @@ Deocomple
     gocode path
 
 
-=== GOEnv ===
+=== GOenv ===
 /etc/profile
 ~/.profile
 export GOPATH=$HOME/go

@@ -5,6 +5,7 @@ let s:map_keys = exists('g:disable_key_mappings') ? 0 : 1
 let s:default_shell = exists('g:split_term_default_shell') ? g:split_term_default_shell : 0
 
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+autocmd TermOpen * startinsert
 
 fun! s:openBuffer(count, vertical)
   let cmd = a:vertical ? 'vnew' : 'new'

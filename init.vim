@@ -12,7 +12,7 @@ source ~/.config/nvim/colorscheme.vim
 source ~/.config/nvim/emmet.vim
 source ~/.config/nvim/jsbeautify.vim
 source ~/.config/nvim/terminal.vim
-source ~/.config/nvim/ctrlp.vim
 source ~/.config/nvim/airline.vim
+source ~/.config/nvim/finder.vim
 
 let g:go_version_warning = 0

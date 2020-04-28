@@ -10,7 +10,8 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 Plug 'machakann/vim-highlightedyank'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'tpope/vim-fugitive'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
