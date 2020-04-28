@@ -5,9 +5,9 @@ let g:multi_cursor_support_imap = 0
 let g:multi_cursor_exit_from_visual_mode = 1
 let g:multi_cursor_exit_from_insert_mode = 1
 
-let g:multi_cursor_start_word_key      = '<C-n>'
-let g:multi_cursor_select_all_word_key = '<A-n>'
-let g:multi_cursor_next_key            = '<C-n>'
+let g:multi_cursor_start_word_key      = '<C-b>'
+let g:multi_cursor_select_all_word_key = '<A-b>'
+let g:multi_cursor_next_key            = '<C-b>'
 let g:multi_cursor_prev_key            = '<C-p>'
 let g:multi_cursor_skip_key            = '<C-x>'
 let g:multi_cursor_quit_key            = '<Esc>'
