@@ -16,5 +16,6 @@ source ~/.config/nvim/airline.vim
 source ~/.config/nvim/finder.vim
 source ~/.config/nvim/gitgutter.vim
 source ~/.config/nvim/multiple.vim
+source ~/.config/nvim/fugitive.vim
 
 let g:go_version_warning = 0
