@@ -1,7 +1,7 @@
 " === Fzf ===
 
 map <leader>o :Files<enter>
-let g:fzf_layout = { 'down': '~30%' }
+let g:fzf_layout = { 'down': '~33%' }
 let g:fzf_preview_window = 'right:55%'
 
 let g:fzf_action = {
