@@ -4,6 +4,10 @@ Deocomple
     python3 path
     gocode path
 
+Fzf
+    export FZF_DEFAULT_COMMAND="find -L"
+        look for hidden files
+
 
 === GOenv ===
 /etc/profile

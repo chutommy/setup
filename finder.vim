@@ -1,8 +1,10 @@
 " === Fzf ===
 
-map <leader>o :Files<enter>
+map <leader>o :FZF<enter>
 let g:fzf_layout = { 'down': '~33%' }
-let g:fzf_preview_window = 'right:55%'
+"map <leader>o :Files<enter>
+"let g:fzf_preview_window = 'right:55%'
+let g:fzf_buffers_jump = 1
 
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
