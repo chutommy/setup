@@ -8,7 +8,7 @@ set showcmd
 set showmode
 set splitright
 set splitbelow
-"set showmatch
+set showmatch
 set incsearch
 set hlsearch
 set ignorecase
