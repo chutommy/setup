@@ -1,5 +1,5 @@
 # My-vimrc
-My vimrc files, use at your own risk.
+There are my vimrc files. Feel free to download and edit them as you wish.
 
 ## Plugins
 Using plugin manager `vim-plug` (install here https://github.com/junegunn/vim-plug).
