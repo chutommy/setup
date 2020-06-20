@@ -15,4 +15,4 @@ source ~/.vim/my-vimrc/nerdtree.vim
 source ~/.vim/my-vimrc/highlighted_yank.vim
 source ~/.vim/my-vimrc/multi_cursors.vim
 source ~/.vim/my-vimrc/fzf.vim
-source ~/.vim/my-vimrc/go.vim
+source ~/.vim/my-vimrc/vim-go.vim

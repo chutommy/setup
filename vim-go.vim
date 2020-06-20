@@ -64,4 +64,3 @@ let g:go_info_mode='gopls'
 let g:go_rename_command = 'gopls'
 let g:go_implements_mode = 'guru'
 let g:go_doc_url = 'https://pkg.go.dev'
-
