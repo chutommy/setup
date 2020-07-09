@@ -4,28 +4,42 @@ There are my vimrc files. Feel free to download and edit them.
 ## Plugins
 Using plugin manager `vim-plug` (https://github.com/junegunn/vim-plug).
 
-My plugins:
-
+#### Display
   - fatih/molokai
-  - fatih/vim-go
-  - mattn/emmet-vim
+
+  - machakann/vim-highlightedyank
+
+  - vim-airline/vim-airline
+  - vim-airline/vim-airline-themes
+
+#### Motion
   - preservim/nerdtree
+  - ryanoasis/vim-devicons
+  - tiagofumo/vim-nerdtree-syntax-highlight
+
+  - junegunn/fzf
+  - junegunn/fzf.vim
+
+#### Completion
   - Shougo/deoplete.nvim
   - roxma/nvim-yarp
   - roxma/vim-hug-neovim-rpc
   - deoplete-plugins/deoplete-go
-  - machakann/vim-highlightedyank
+
+  - mattn/emmet-vim
+
+#### Utilities
   - tpope/vim-fugitive
-  - vim-airline/vim-airline
-  - vim-airline/vim-airline-themes
-  - junegunn/fzf
-  - junegunn/fzf.vim
   - airblade/vim-gitgutter
-  - terryma/vim-multiple-cursors
-  - diepm/vim-rest-console
-  - preservim/nerdcommenter
+
   - jiangmiao/auto-pairs
   - tmhedberg/matchit
-  - ryanoasis/vim-devicons
-  - tiagofumo/vim-nerdtree-syntax-highlight
+
+  - preservim/nerdcommenter
+
   - tpope/vim-eunuch
+
+  - diepm/vim-rest-console
+
+#### Language specific
+  - fatih/vim-go
