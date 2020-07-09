@@ -7,7 +7,7 @@ filetype plugin indent on
 set noswapfile
 set noerrorbells
 set nobackup
-set encoding=utf8
+set encoding=utf-8
 set autowrite
 set autoread
 set laststatus=2

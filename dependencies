@@ -1,12 +1,13 @@
-vim-plug
+=== Plugin Manager ===
+  - vim-plug
 
-Deocomplete
+=== Deocomplete ===
     python3 path
     gocode path
 
-Fzf
-    export FZF_DEFAULT_COMMAND="find -L"
-        look for hidden files
+=== Fzf ===
+export FZF_DEFAULT_COMMAND="find -L"
+  - look for hidden files
 
 
 === GOenv ===

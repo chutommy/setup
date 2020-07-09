@@ -23,4 +23,5 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tmhedberg/matchit'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'tpope/vim-eunuch'
 call plug#end()

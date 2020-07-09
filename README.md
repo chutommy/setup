@@ -2,7 +2,7 @@
 There are my vimrc files. Feel free to download and edit them.
 
 ## Plugins
-Using plugin manager `vim-plug` (install here https://github.com/junegunn/vim-plug).
+Using plugin manager `vim-plug` (https://github.com/junegunn/vim-plug).
 
 My plugins:
 
@@ -28,3 +28,4 @@ My plugins:
   - tmhedberg/matchit
   - ryanoasis/vim-devicons
   - tiagofumo/vim-nerdtree-syntax-highlight
+  - tpope/vim-eunuch
