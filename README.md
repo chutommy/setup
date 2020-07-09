@@ -23,3 +23,8 @@ My plugins:
   - airblade/vim-gitgutter
   - terryma/vim-multiple-cursors
   - diepm/vim-rest-console
+  - preservim/nerdcommenter
+  - jiangmiao/auto-pairs
+  - tmhedberg/matchit
+  - ryanoasis/vim-devicons
+  - tiagofumo/vim-nerdtree-syntax-highlight
