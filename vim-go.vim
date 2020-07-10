@@ -2,8 +2,8 @@
 
 autocmd FileType go nmap <leader>r <Plug>(go-run)
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
-autocmd FileType go nmap <leader>t  <Plug>(go-test)
-autocmd FileType go nmap <leader>c <Plug>(go-coverage-toggle)
+autocmd FileType go nmap <leader>gt  <Plug>(go-test)
+autocmd FileType go nmap <leader>cc <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>s <Plug>(go-describe)
 
 autocmd FileType go map <leader>v :w<CR>:GoVet<enter>
