@@ -3,7 +3,7 @@
 source ~/.vim/myvim/plugins.vim
 
 source ~/.vim/myvim/general.vim
-source ~/.vim/myvim/diplay.vim
+source ~/.vim/myvim/display.vim
 source ~/.vim/myvim/mappings.vim
 
 source ~/.vim/myvim/colors.vim

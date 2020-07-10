@@ -6,6 +6,7 @@ Using plugin manager `vim-plug` (https://github.com/junegunn/vim-plug).
 
 #### Display
   - fatih/molokai
+  - morhetz/gruvbox
 
   - machakann/vim-highlightedyank
 

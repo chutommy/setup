@@ -1,6 +1,7 @@
 " === Plugins ===
 
 call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
 Plug 'fatih/molokai'
 Plug 'fatih/vim-go'
 Plug 'mattn/emmet-vim'

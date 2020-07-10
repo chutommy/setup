@@ -1,6 +1,7 @@
 " === Airline ===
 
-let g:airline_theme='simple'
+" let g:airline_theme='simple'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 if !exists('g:airline_symbols')
