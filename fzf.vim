@@ -1,7 +1,7 @@
 " === Fzf ===
 
 "map <leader>o :FZF<enter>
-map <leader>o :Files<enter>
+nnoremap <leader>o :Files<enter>
 let g:fzf_layout = { 'down': '~35%' }
 let g:fzf_preview_window = 'right:60%'
 let g:fzf_buffers_jump = 0

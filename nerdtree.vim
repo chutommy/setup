@@ -1,6 +1,6 @@
 " === NERDTree ===
 
-map <leader>k :NERDTreeToggle<enter>
+nnoremap <leader>k :NERDTreeToggle<enter>
 set grepprg=ag\ --nogroup\ --nocolor
 
 " function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)

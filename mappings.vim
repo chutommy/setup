@@ -8,5 +8,10 @@ nnoremap <leader>tp :tabprevious<cr>
 nnoremap <C-n> :cnext<CR>
 nnoremap <C-m> :cprevious<CR>
 
-map tt :terminal<CR>
+nnoremap tt :terminal<CR>
 nnoremap * *``
+
+nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
+function! ClearSearch()
+    let @/=""
+endfunction
