@@ -53,6 +53,8 @@ let g:go_fmt_fail_silently = 1
 let g:go_textobj_include_function_doc = 1
 
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+"let g:go_metalinter_autosave = 1
+"let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:go_metalinter_deadline = "5s"
 
 let g:go_term_close_on_exit = 0
