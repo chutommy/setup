@@ -4,7 +4,7 @@ let mapleader=","
 syntax on
 filetype plugin indent on
 
-set noswapfile
+"set noswapfile
 set noerrorbells
 set nobackup
 set encoding=utf-8
