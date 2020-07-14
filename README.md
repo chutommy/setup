@@ -33,6 +33,7 @@ Using plugin manager `vim-plug` (https://github.com/junegunn/vim-plug).
   - tpope/vim-fugitive
   - airblade/vim-gitgutter
 
+  - jiangmiao/auto-pairs
   - tmhedberg/matchit
 
   - preservim/nerdcommenter

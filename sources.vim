@@ -19,6 +19,7 @@ source ~/.vim/myvim/vrc.vim
 source ~/.vim/myvim/vim-go.vim
 source ~/.vim/myvim/multi_cursors.vim
 source ~/.vim/myvim/proto.vim
+source ~/.vim/myvim/auto-pairs.vim
 
 source ~/.vim/myvim/nerdcommenter.vim
 source ~/.vim/myvim/nerdtree-highlight.vim

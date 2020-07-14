@@ -15,10 +15,3 @@ nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
 function! ClearSearch()
     let @/=""
 endfunction
-
-inoremap (; (<CR>);<C-c>O
-inoremap (, (<CR>),<C-c>O
-inoremap {; {<CR>};<C-c>O
-inoremap {, {<CR>},<C-c>O
-inoremap [; [<CR>];<C-c>O
-inoremap [, [<CR>],<C-c>O
