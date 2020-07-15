@@ -15,3 +15,9 @@ nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
 function! ClearSearch()
     let @/=""
 endfunction
+
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
