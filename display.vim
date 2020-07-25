@@ -2,26 +2,22 @@
 
 set t_Co=256
 set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
+
 set list
 set number
+set relativenumber
+set cursorline
+set cursorcolumn
+
 set showcmd
 set showmode
-set splitright
-set splitbelow
 set showmatch
+set laststatus=2
+
 set incsearch
 set hlsearch
-set ignorecase
-set smartcase
-set wildmenu
-set lazyredraw
-set mouse-=a
 
-set cursorline
-set relativenumber
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set softtabstop=4
-set autoindent
-set smartindent
+set linebreak
+set wrap
+set scrolloff=4
+set sidescrolloff=4
