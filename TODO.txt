@@ -1,16 +1,9 @@
-=== Plugin Manager ===
-  - vim-plug
+Deoplete
 
-=== Deocomplete ===
-    python3 path
-    gocode path
-
-=== Fzf ===
+Fzf
 export FZF_DEFAULT_COMMAND="find -L"
-  - look for hidden files
 
-
-=== GOenv ===
+GOenv
 /etc/profile
 export GOPATH=$HOME/go
 export GOBIN=$HOME/go/bin
