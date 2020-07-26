@@ -8,7 +8,7 @@ source ~/.vim/myvim/mappings.vim
 
 source ~/.vim/myvim/colors.vim
 source ~/.vim/myvim/airline.vim
-source ~/.vim/myvim/completion.vim
+source ~/.vim/myvim/deoplete.vim
 source ~/.vim/myvim/emmet.vim
 source ~/.vim/myvim/fzf.vim
 source ~/.vim/myvim/nerdtree.vim
@@ -21,6 +21,7 @@ source ~/.vim/myvim/multi_cursors.vim
 source ~/.vim/myvim/proto.vim
 source ~/.vim/myvim/auto-pairs.vim
 source ~/.vim/myvim/ultisnips.vim
+source ~/.vim/myvim/echodoc.vim
 
 source ~/.vim/myvim/nerdcommenter.vim
 source ~/.vim/myvim/nerdtree-highlight.vim
