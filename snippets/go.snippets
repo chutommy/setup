@@ -1,0 +1,11 @@
+# === Go snippets ===
+
+priority 10
+
+snippet rootDir "rootDir function generate" A
+func rootDir() string {
+	_, caller, _, _ := runtime.Caller(0)
+	dir := path.Dir(caller)
+	return filepath.Dir(dir)
+}
+endsnippet
