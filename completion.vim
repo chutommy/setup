@@ -4,6 +4,7 @@ setlocal omnifunc=gocomplete#Complete
 set completeopt=longest,menuone
 set completeopt+=noinsert
 set completeopt+=noselect
+set shortmess+=c
 
 let g:python3_host_prog  = '/usr/bin/python3'
 let g:python3_host_skip_check = 1
