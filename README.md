@@ -9,8 +9,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 ### Installation
 ```bash
-$ git clone https://github.com/chutified/myvim.git
-$ mv -f myvim ~/.vim/
-$ echo "source ~/.vim/myvim/sources.vim" > ~/.vimrc
-$ vim +PlugInstall +qa
+$ git clone https://github.com/chutified/myvim.git \
+    && mv -f myvim ~/.vim/ \
+    && echo "source ~/.vim/myvim/sources.vim" > ~/.vimrc \
+    && vim +PlugInstall +qa
 ```
