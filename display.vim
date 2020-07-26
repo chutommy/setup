@@ -10,7 +10,7 @@ set cursorline
 set cursorcolumn
 
 set showcmd
-set showmode
+set noshowmode
 set showmatch
 set laststatus=2
 
