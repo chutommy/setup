@@ -28,6 +28,7 @@ Using plugin manager `vim-plug` (https://github.com/junegunn/vim-plug).
   - deoplete-plugins/deoplete-go
 
   - mattn/emmet-vim
+  - SirVer/ultisnips
 
 #### Utilities
   - tpope/vim-fugitive

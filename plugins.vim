@@ -25,4 +25,5 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
+Plug 'SirVer/ultisnips'
 call plug#end()
