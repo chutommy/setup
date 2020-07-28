@@ -1,6 +1,5 @@
 " === Keymaps ===
 
-inoremap jj <Esc>
 let mapleader=","
 
 nnoremap <leader>tt :tabnew<CR>
