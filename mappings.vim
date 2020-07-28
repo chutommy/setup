@@ -1,5 +1,8 @@
 " === Keymaps ===
 
+inoremap jj <Esc>
+let mapleader=","
+
 nnoremap <leader>tt :tabnew<CR>
 nnoremap <leader>tc :tabclose<cr>
 nnoremap <leader>tn :tabnext<cr>
