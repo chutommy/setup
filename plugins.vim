@@ -27,4 +27,5 @@ Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'Shougo/echodoc.vim'
+Plug 'github.com/tpope/vim-surround'
 call plug#end()
