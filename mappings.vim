@@ -24,8 +24,8 @@ inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-noremap <M-l> 4l
-noremap <M-h> 4h
+noremap <S-l> 4l
+noremap <S-h> 4h
 
 noremap <silent> <C-h> :wincmd h<CR>
 noremap <silent> <C-j> :wincmd j<CR>
