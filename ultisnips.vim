@@ -1,7 +1,6 @@
 " === Ultisnips ===
 
 let g:UltiSnipsEditSplit = "tabdo"
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/myvim/snippets']
 
 let g:UltiSnipsExpandTrigger       = "<C-l>"
 let g:UltiSnipsJumpForwardTrigger  = "<C-j>"
