@@ -30,4 +30,6 @@ Plug 'Shougo/echodoc.vim'
 Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
 Plug 'stephpy/vim-yaml'
+Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 call plug#end()
