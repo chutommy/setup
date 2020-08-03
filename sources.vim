@@ -1,11 +1,12 @@
 " === Source files ===
 
+" Include plugins
 source ~/.vim/myvim/plugins.vim
 
+" Apply plugin's configurations
 source ~/.vim/myvim/general.vim
 source ~/.vim/myvim/display.vim
 source ~/.vim/myvim/mappings.vim
-
 source ~/.vim/myvim/colors.vim
 source ~/.vim/myvim/airline.vim
 source ~/.vim/myvim/deoplete.vim
@@ -25,6 +26,8 @@ source ~/.vim/myvim/echodoc.vim
 source ~/.vim/myvim/python-jedi.vim
 source ~/.vim/myvim/bracey.vim
 
+" Apply another settings that are depended
+" on the settings of the previous plugins
 source ~/.vim/myvim/nerdcommenter.vim
 source ~/.vim/myvim/nerdtree-highlight.vim
 source ~/.vim/myvim/vim-devicons.vim

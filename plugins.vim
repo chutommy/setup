@@ -2,38 +2,53 @@
 
 call plug#begin('~/.vim/plugged')
 
-" Interface
+" == Code display ==
 Plug 'morhetz/gruvbox'
-Plug 'fatih/molokai'
-Plug 'fatih/vim-go'
-Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree'
+Plug 'machakann/vim-highlightedyank'
+Plug 'Shougo/echodoc.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+" == Completion ==
 Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
-Plug 'machakann/vim-highlightedyank'
-Plug 'tpope/vim-fugitive'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'airblade/vim-gitgutter'
+
+" == Code edit ==
 Plug 'terryma/vim-multiple-cursors'
-Plug 'diepm/vim-rest-console'
-Plug 'preservim/nerdcommenter'
-Plug 'tmhedberg/matchit'
-Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
-Plug 'Shougo/echodoc.vim'
+Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
-Plug 'pangloss/vim-javascript'
-Plug 'stephpy/vim-yaml'
+
+" == Interface ==
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'diepm/vim-rest-console'
+Plug 'turbio/bracey.vim'
+
+" == Dirs and files ==
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tmhedberg/matchit'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" == Filetype specific ==
+" Go
+Plug 'fatih/vim-go'
+" HTML & CSS
+Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
+" Javacript
+Plug 'pangloss/vim-javascript'
+" = Python
 Plug 'davidhalter/jedi-vim'
-Plug 'turbio/bracey.vim'
+" YAML
+Plug 'stephpy/vim-yaml'
+
 call plug#end()
