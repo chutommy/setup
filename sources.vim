@@ -24,7 +24,6 @@ source ~/.vim/myvim/auto-pairs.vim
 source ~/.vim/myvim/ultisnips.vim
 source ~/.vim/myvim/echodoc.vim
 source ~/.vim/myvim/python-jedi.vim
-source ~/.vim/myvim/bracey.vim
 source ~/.vim/myvim/sql-uppercase.vim
 
 " Apply another settings that are depended

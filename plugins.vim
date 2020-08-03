@@ -28,7 +28,6 @@ Plug 'matze/vim-move'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'diepm/vim-rest-console'
-Plug 'turbio/bracey.vim'
 
 " == Dirs and files ==
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
