@@ -1,8 +1,5 @@
 " === Colors ===
 
-" colorscheme molokai
-" let g:molokai_original=1
-
 let g:rehash256=1
 let g:gruvbox_italic=1
 let g:gruvbox_contrast_dark="hard"
