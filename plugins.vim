@@ -22,6 +22,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'matze/vim-move'
 
 " == Interface ==
 Plug 'tpope/vim-fugitive'
