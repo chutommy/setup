@@ -29,4 +29,5 @@ Plug 'SirVer/ultisnips'
 Plug 'Shougo/echodoc.vim'
 Plug 'tpope/vim-surround'
 Plug 'pangloss/vim-javascript'
+Plug 'stephpy/vim-yaml'
 call plug#end()
