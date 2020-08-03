@@ -44,6 +44,7 @@ Plug 'fatih/vim-go'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'jvanja/vim-bootstrap4-snippets'
 " Javacript
 Plug 'pangloss/vim-javascript'
 " = Python
