@@ -24,5 +24,5 @@ inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
-noremap <S-l> 4l
-noremap <S-h> 4h
+noremap <S-l> 5l
+noremap <S-h> 5h
