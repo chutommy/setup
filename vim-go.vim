@@ -6,8 +6,14 @@ autocmd FileType go nmap <leader>gt  <Plug>(go-test)
 autocmd FileType go nmap <leader>cc <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>s <Plug>(go-describe)
 
+" check code
 autocmd FileType go map <leader>v :w<CR>:GoVet<enter>
 autocmd FileType go map <leader>l :w<CR>:GoLint<enter>
+
+" docs
+au FileType go nmap <leader>gd <Plug>(go-doc)
+au FileType go nmap <leader>gv <Plug>(go-doc-vertical)
+au FileType go nmap <leader>gb <Plug>(go-doc-browser)
 
 au FileType go nmap <leader>dt <Plug>(go-def-tab)
 au FileType go nmap <leader>ds <Plug>(go-def-split)
@@ -15,17 +21,16 @@ au FileType go nmap <leader>dv <Plug>(go-def-vertical)
 
 let g:go_def_reuse_buffer = 0
 
-au FileType go nmap <leader>gd <Plug>(go-doc)
-au FileType go nmap <leader>gv <Plug>(go-doc-vertical)
-au FileType go nmap <leader>gb <Plug>(go-doc-browser)
-
+" test file
 autocmd Filetype go command! -bang A call go#alternate#Switch(<bang>0, 'edit')
 autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
 autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
 autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
 
+" go module
 au FileType go nmap <leader>gmt :!go mod tidy<CR>
 
+" highlighting
 set updatetime=100
 let g:go_auto_type_info = 1
 let g:go_highlight_types = 1

@@ -13,4 +13,5 @@ $ git clone https://github.com/chutified/myvim.git \
     && mv -f myvim ~/.vim/ \
     && echo "source ~/.vim/myvim/sources.vim" > ~/.vimrc \
     && vim +PlugInstall +qa
+    && vim TODO.txt
 ```

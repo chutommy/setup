@@ -1,11 +1,13 @@
 " === Fzf ===
 
+" set the window
 "map <leader>o :FZF<enter>
 nnoremap <leader>o :Files<enter>
 let g:fzf_layout = { 'down': '~35%' }
 let g:fzf_preview_window = 'right:60%'
 let g:fzf_buffers_jump = 0
 
+" enable the pos of the opening window
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-s': 'split',
@@ -30,6 +32,7 @@ autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
     \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
+" disable milticursors, buggy
 function! Multiple_cursors_before()
     let b:deoplete_disable_auto_complete = 1
 endfunction

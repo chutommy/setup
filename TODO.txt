@@ -1,11 +1,14 @@
-Deoplete | python location
+Deoplete | change python location if necessary
 
-Fzf | export FZF_DEFAULT_COMMAND="find -L" 
-    - finds hidden files
+Fzf | enable hidden files
+    - append to bash file: `export FZF_DEFAULT_COMMAND="find -L"`
 
-Bracey | npm install --prefix server
+Bracey | enable live reloading of html & js
+    - npm install --prefix server
 
-GOenv | /etc/profile
+
+Set GOenv (golang enviroment)
+append to bash file:
     - export GOPATH=$HOME/go
     - export GOBIN=$HOME/go/bin
     - export PATH=/usr/local/go/bin:$GOBIN:$PATH

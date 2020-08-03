@@ -3,14 +3,17 @@
 syntax on
 filetype plugin indent on
 
-"set noswapfile
+" disable backup
+set noswapfile
 set noerrorbells
 set nobackup
 
+" chars
 set encoding=utf-8
 set autowrite
 set autoread
 
+" backspace behavior
 set backspace=indent,eol,start
 set clipboard=unnamed
 
@@ -24,6 +27,7 @@ set autoindent
 set smartindent
 set mouse-=a
 
+" search options
 set ignorecase
 set smartcase
 
