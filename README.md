@@ -1,5 +1,5 @@
-# My-vimrc
-There are my vimrc files. Feel free to download and edit them.
+# .vimrc
+These are my VIM files. Use at your own risk.
 
 ### Requirements: vim-plug (<a href="https://github.com/junegunn/vim-plug">github</a>)
 ```bash
