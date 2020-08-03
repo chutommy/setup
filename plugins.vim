@@ -33,4 +33,5 @@ Plug 'stephpy/vim-yaml'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'davidhalter/jedi-vim'
+Plug 'turbio/bracey.vim'
 call plug#end()
