@@ -1,10 +1,11 @@
-Deoplete
+Deoplete | python location
 
-Fzf
-export FZF_DEFAULT_COMMAND="find -L"
+Fzf | export FZF_DEFAULT_COMMAND="find -L" 
+    - finds hidden files
 
-GOenv
-/etc/profile
-export GOPATH=$HOME/go
-export GOBIN=$HOME/go/bin
-export PATH=/usr/local/go/bin:$GOBIN:$PATH
+Bracey | npm install --prefix server
+
+GOenv | /etc/profile
+    - export GOPATH=$HOME/go
+    - export GOBIN=$HOME/go/bin
+    - export PATH=/usr/local/go/bin:$GOBIN:$PATH
