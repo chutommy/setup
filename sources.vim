@@ -17,7 +17,6 @@ source ~/.vim/myvim/fugitive.vim
 source ~/.vim/myvim/git_gutter.vim
 source ~/.vim/myvim/vrc.vim
 source ~/.vim/myvim/vim-go.vim
-source ~/.vim/myvim/python.vim
 source ~/.vim/myvim/multi_cursors.vim
 source ~/.vim/myvim/proto.vim
 source ~/.vim/myvim/auto-pairs.vim
