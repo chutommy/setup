@@ -24,7 +24,6 @@ set incsearch
 set hlsearch
 
 " movinga while editting
-set linebreak
 set wrap
 set scrolloff=4
 set sidescrolloff=4
