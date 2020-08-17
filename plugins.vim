@@ -8,6 +8,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'Shougo/echodoc.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'
 
 " == Completion ==
 Plug 'Shougo/deoplete.nvim'
