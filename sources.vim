@@ -25,6 +25,7 @@ source ~/.vim/myvim/ultisnips.vim
 source ~/.vim/myvim/echodoc.vim
 source ~/.vim/myvim/python-jedi.vim
 source ~/.vim/myvim/sql-uppercase.vim
+source ~/.vim/myvim/vim-javasript.vim
 
 " Apply another settings that are depended
 " on the settings of the previous plugins
