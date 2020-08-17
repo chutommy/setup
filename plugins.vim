@@ -50,5 +50,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'davidhalter/jedi-vim'
 " YAML
 Plug 'stephpy/vim-yaml'
+" Dockerfile
+Plug 'ekalinin/Dockerfile.vim'
 
 call plug#end()
