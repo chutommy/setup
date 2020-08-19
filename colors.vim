@@ -13,8 +13,8 @@ let g:gruvbox_italicize_comments=0
 colorscheme gruvbox
 set termguicolors
 
-" switching light and dark backgroun
-" depend on time
+" switching light and dark backgroung
+" depend on the time
 let currentHour = strftime('%H')
 if (currentHour > 7) && (currentHour < 18)
     set background=light
