@@ -48,7 +48,5 @@ Plug 'pangloss/vim-javascript'
 Plug 'stephpy/vim-yaml'
 " Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
-" General
-Plug 'sheerun/vim-polyglot'
 
 call plug#end()
