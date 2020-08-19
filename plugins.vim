@@ -8,7 +8,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'Shougo/echodoc.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'sheerun/vim-polyglot'
 
 " == Completion ==
 Plug 'Shougo/deoplete.nvim'
@@ -27,7 +26,6 @@ Plug 'tpope/vim-surround'
 " == Interface ==
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'diepm/vim-rest-console'
 
 " == Dirs and files ==
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -44,14 +42,13 @@ Plug 'fatih/vim-go'
 Plug 'mattn/emmet-vim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
-Plug 'jvanja/vim-bootstrap4-snippets'
 " Javacript
 Plug 'pangloss/vim-javascript'
-" = Python
-Plug 'davidhalter/jedi-vim'
 " YAML
 Plug 'stephpy/vim-yaml'
 " Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
+" General
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
