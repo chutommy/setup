@@ -48,5 +48,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'stephpy/vim-yaml'
 " Dockerfile
 Plug 'ekalinin/Dockerfile.vim'
+" PostgreSQL
+Plug 'lifepillar/pgsql.vim'
 
 call plug#end()
