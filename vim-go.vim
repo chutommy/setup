@@ -6,6 +6,12 @@ autocmd FileType go nmap <leader>gt  <Plug>(go-test)
 autocmd FileType go nmap <leader>cc <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>s <Plug>(go-describe)
 
+" debug
+autocmd FileType go nmap <leader>dbs :GoDebugStart<cr>
+autocmd FileType go nmap <leader>dbr :GoDebugRestart<cr>
+autocmd FileType go nmap <leader>dbt :GoDebugTest<cr>
+autocmd FileType go nmap <leader>dbe <Plug>(go-debug-stop)
+
 " check code
 autocmd FileType go map <leader>v :w<CR>:GoVet<enter>
 autocmd FileType go map <leader>l :w<CR>:GoLint<enter>
@@ -64,3 +70,10 @@ let g:go_info_mode='gopls'
 let g:go_rename_command = 'gopls'
 let g:go_implements_mode = 'guru'
 let g:go_doc_url = 'https://pkg.go.dev'
+
+let g:go_debug_windows = {
+    \ 'vars':       'rightbelow 60vnew',
+    \ 'stack':      'rightbelow 15new',
+\ }
+let g:go_highlight_debug = 1
+let g:go_debug_breakpoint_sign_text = '⊸'
