@@ -17,7 +17,6 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 
 " == Code edit ==
 Plug 'terryma/vim-multiple-cursors'
-Plug 'tpope/vim-eunuch'
 Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdcommenter'
