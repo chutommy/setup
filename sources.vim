@@ -13,11 +13,11 @@ runtime myvim/airline.vim
 runtime myvim/emmet.vim
 runtime myvim/fzf.vim
 runtime myvim/nerdtree.vim
-runtime myvim/highlighted_yank.vim
+runtime myvim/highlighted-yank.vim
 runtime myvim/fugitive.vim
-runtime myvim/git_gutter.vim
+runtime myvim/git-gutter.vim
 runtime myvim/vim-go.vim
-runtime myvim/multi_cursors.vim
+runtime myvim/multi-cursors.vim
 runtime myvim/proto.vim
 runtime myvim/auto-pairs.vim
 runtime myvim/ultisnips.vim
@@ -31,4 +31,4 @@ runtime myvim/deoplete.vim
 runtime myvim/nerdcommenter.vim
 runtime myvim/nerdtree-highlight.vim
 runtime myvim/vim-devicons.vim
-runtime myvim/multi_cursors-fix.vim
+runtime myvim/multi-cursors-fix.vim
