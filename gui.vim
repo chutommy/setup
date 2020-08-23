@@ -1,0 +1,3 @@
+" === GUI ===
+
+set guioptions='ai'

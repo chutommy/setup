@@ -6,6 +6,7 @@ runtime myvim/plugins.vim
 " Apply plugin's configurations
 runtime myvim/general.vim
 runtime myvim/display.vim
+runtime myvim/gui.vim
 runtime myvim/mappings.vim
 runtime myvim/colors.vim
 runtime myvim/airline.vim
