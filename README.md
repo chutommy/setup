@@ -29,3 +29,4 @@ $ git clone https://github.com/chutified/myvim.git \
 Without the Python3 support inside the Git-bash, I recommend to comment out these plugins:
     - Deoplete
     - Ultisnips
+    - FZF
