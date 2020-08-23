@@ -1,32 +1,32 @@
 " === Source files ===
 
 " Include plugins
-source ~/.vim/myvim/plugins.vim
+runtime myvim/plugins.vim
 
 " Apply plugin's configurations
-source ~/.vim/myvim/general.vim
-source ~/.vim/myvim/display.vim
-source ~/.vim/myvim/mappings.vim
-source ~/.vim/myvim/colors.vim
-source ~/.vim/myvim/airline.vim
-source ~/.vim/myvim/deoplete.vim
-source ~/.vim/myvim/emmet.vim
-source ~/.vim/myvim/fzf.vim
-source ~/.vim/myvim/nerdtree.vim
-source ~/.vim/myvim/highlighted_yank.vim
-source ~/.vim/myvim/fugitive.vim
-source ~/.vim/myvim/git_gutter.vim
-source ~/.vim/myvim/vim-go.vim
-source ~/.vim/myvim/multi_cursors.vim
-source ~/.vim/myvim/proto.vim
-source ~/.vim/myvim/auto-pairs.vim
-source ~/.vim/myvim/ultisnips.vim
-source ~/.vim/myvim/echodoc.vim
-source ~/.vim/myvim/vim-javasript.vim
-source ~/.vim/myvim/sql.vim
+runtime myvim/general.vim
+runtime myvim/display.vim
+runtime myvim/mappings.vim
+runtime myvim/colors.vim
+runtime myvim/airline.vim
+runtime myvim/deoplete.vim
+runtime myvim/emmet.vim
+runtime myvim/fzf.vim
+runtime myvim/nerdtree.vim
+runtime myvim/highlighted_yank.vim
+runtime myvim/fugitive.vim
+runtime myvim/git_gutter.vim
+runtime myvim/vim-go.vim
+runtime myvim/multi_cursors.vim
+runtime myvim/proto.vim
+runtime myvim/auto-pairs.vim
+runtime myvim/ultisnips.vim
+runtime myvim/echodoc.vim
+runtime myvim/vim-javasript.vim
+runtime myvim/sql.vim
 
 " Apply another settings that are depended
 " on the settings of the previous plugins
-source ~/.vim/myvim/nerdcommenter.vim
-source ~/.vim/myvim/nerdtree-highlight.vim
-source ~/.vim/myvim/vim-devicons.vim
+runtime myvim/nerdcommenter.vim
+runtime myvim/nerdtree-highlight.vim
+runtime myvim/vim-devicons.vim
