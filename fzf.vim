@@ -3,8 +3,9 @@
 " set the window
 "map <leader>o :FZF<enter>
 nnoremap <leader>o :Files<enter>
-let g:fzf_layout = { 'down': '~35%' }
-let g:fzf_preview_window = 'right:60%'
+nnoremap <leader>l :BLines<enter>
+let g:fzf_layout = { 'down': '~36%' }
+let g:fzf_preview_window = 'right:66%'
 let g:fzf_buffers_jump = 0
 
 " enable the pos of the opening window
