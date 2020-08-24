@@ -21,6 +21,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
 
 " == Interface ==
 Plug 'tpope/vim-fugitive'

@@ -25,6 +25,7 @@ runtime myvim/echodoc.vim
 runtime myvim/vim-javasript.vim
 runtime myvim/sql.vim
 runtime myvim/deoplete.vim
+runtime myvim/tagbar.vim
 
 " Apply another settings that are depended
 " on the settings of the previous plugins
