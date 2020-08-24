@@ -3,7 +3,7 @@
 " set the window
 "map <leader>o :FZF<enter>
 nnoremap <leader>o :Files<enter>
-nnoremap <leader>l :BLines<enter>
+nnoremap <leader>p :BLines<enter>
 let g:fzf_layout = { 'down': '~36%' }
 let g:fzf_preview_window = 'right:66%'
 let g:fzf_buffers_jump = 0
