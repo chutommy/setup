@@ -14,6 +14,7 @@ nnoremap <C-m> :cprevious<CR>
 
 " terminal
 nnoremap tt :terminal<CR>
+tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
 
 " highlight
 nnoremap * *``

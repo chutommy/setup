@@ -18,7 +18,6 @@ Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
 " == Code edit ==
 Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
-Plug 'SirVer/ultisnips'
 Plug 'preservim/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
@@ -33,7 +32,6 @@ Plug 'junegunn/fzf.vim'
 Plug 'tmhedberg/matchit'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " == Filetype specific ==
 " Go
@@ -44,11 +42,5 @@ Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 " Javacript
 Plug 'pangloss/vim-javascript'
-" YAML
-Plug 'stephpy/vim-yaml'
-" Dockerfile
-Plug 'ekalinin/Dockerfile.vim'
-" PostgreSQL
-Plug 'lifepillar/pgsql.vim'
 
 call plug#end()
