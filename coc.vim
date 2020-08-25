@@ -23,12 +23,10 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 let g:coc_global_extensions = [
     \ 'coc-json',
     \ 'coc-yaml',
-    \ 'coc-xml',
     \ 'coc-vimlsp',
     \ 'coc-go',
     \ 'coc-jedi',
     \ 'coc-tsserver',
-    \ 'coc-xml',
     \ 'coc-sh',
     \ 'coc-sql',
     \ 'coc-html',
@@ -39,4 +37,14 @@ let g:coc_global_extensions = [
     \ 'coc-highlight',
     \ 'coc-yank',
     \ 'coc-pairs',
+    \ 'coc-git'
   \ ]
+
+" mapping
+
+" explorer
+nmap <leader>k :CocCommand explorer<cr>
+
+" format
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)

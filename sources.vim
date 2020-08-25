@@ -11,10 +11,8 @@ runtime myvim/colors.vim
 runtime myvim/airline.vim
 runtime myvim/fzf.vim
 runtime myvim/fugitive.vim
-runtime myvim/git-gutter.vim
 runtime myvim/vim-go.vim
 runtime myvim/multi-cursors.vim
 runtime myvim/tagbar.vim
 runtime myvim/coc.vim
-
 runtime myvim/nerdcommenter.vim

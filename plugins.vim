@@ -10,7 +10,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'preservim/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'fatih/vim-go'

@@ -14,7 +14,6 @@ nnoremap <C-m> :cprevious<CR>
 
 " terminal
 nnoremap tt :terminal<CR>
-tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
 
 " highlight
 nnoremap * *``
@@ -24,11 +23,11 @@ function! ClearSearch()
 endfunction
 
 " shifting
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-inoremap <S-Tab> <C-D>
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
+" nnoremap <Tab> >>_
+" nnoremap <S-Tab> <<_
+" inoremap <S-Tab> <C-D>
+" vnoremap <Tab> >gv
+" vnoremap <S-Tab> <gv
 
 " fast moving
 noremap <S-l> 5l
