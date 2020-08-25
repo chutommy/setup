@@ -28,14 +28,6 @@
 
     "jedi.enable": true,
     "jedi.startupMessage": true,
-    "jedi.markupKindPreferred": "plaintext",
-    "jedi.trace.server": true,
-    "jedi.executable.command": "jedi-language-server",
-    "jedi.completion.disableSnippets": false,
-    "jedi.diagnostics.enable": true,
-    "jedi.diagnostics.didOpen": true,
-    "jedi.diagnostics.didChange": true,
-    "jedi.diagnostics.didSave": true,
 
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
@@ -76,71 +68,8 @@
     "explorer.position": "left",
     "explorer.width": 36,
     "explorer.keyMappings": {
-        "i": false,
-
-        "gk": "expandablePrev",
-        "gj": "expandableNext",
-
-        "*": "toggleSelection",
-        "<tab>": "actionMenu",
-
-        "h": "collapse",
-        "l": ["expandable?", "expand", "open"],
-        "J": ["toggleSelection", "nodeNext"],
-        "K": ["toggleSelection", "nodePrev"],
-        "gl": "expandRecursive",
-        "gh": "collapseRecursive",
-        "<2-LeftMouse>": [
-          "expandable?",
-          ["expanded?", "collapse", "expand"],
-          "open"
-        ],
-        "e": ["expanded?", "collapse", "expand"],
-        "<cr>": ["expandable?", "cd", "open"],
-        "o": "open",
         "s": "open:split",
-        "S": "open:vsplit",
-        "t": "open:tab",
-        "<bs>": "gotoParent",
-        "gp": "preview:labeling",
-
-        "y": "copyFilepath",
-        "Y": "copyFilename",
-        "c": "copyFile",
-        "x": "cutFile",
-        "p": "pasteFile",
-        "d": "delete",
-        "D": "deleteForever",
-
-        "a": "addFile",
-        "A": "addDirectory",
-        "r": "rename",
-
-        ".": "toggleHidden",
-        "R": "refresh",
-
-        "?": "help",
-        "q": "quit",
-        "<esc>": "esc",
-        "X": "systemExecute",
-        "gd": "listDrive",
-
-        "f": "search",
-        "F": "searchRecursive",
-
-        "gf": "gotoSource:file",
-        "gb": "gotoSource:buffer",
-
-        "[[": "sourcePrev",
-        "]]": "sourceNext",
-
-        "[d": "diagnosticPrev",
-        "]d": "diagnosticNext",
-
-        "[c": "gitPrev",
-        "]c": "gitNext",
-        "<<": "gitStage",
-        ">>": "gitUnstage"
+        "S": "open:vsplit"
     },
 
     "highlight.colors.enable": true,
@@ -159,5 +88,10 @@
         "'",
         "\"",
         "`"
-    ]
+    ],
+
+    "git.command": "git",
+    "git.remoteName": "origin",
+    "git.enableGutters": true,
+    "git.enableGlobalStatus": true
 }
