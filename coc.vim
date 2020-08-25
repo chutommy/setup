@@ -18,3 +18,25 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+
+" extension
+let g:coc_global_extensions = [
+    \ 'coc-json',
+    \ 'coc-yaml',
+    \ 'coc-xml',
+    \ 'coc-vimlsp',
+    \ 'coc-go',
+    \ 'coc-jedi',
+    \ 'coc-tsserver',
+    \ 'coc-xml',
+    \ 'coc-sh',
+    \ 'coc-sql',
+    \ 'coc-html',
+    \ 'coc-markdownlint',
+    \ 'coc-css',
+    \ 'coc-emmet',
+    \ 'coc-explorer',
+    \ 'coc-highlight',
+    \ 'coc-yank',
+    \ 'coc-pairs',
+  \ ]
