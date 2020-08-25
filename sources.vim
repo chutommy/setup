@@ -18,10 +18,9 @@ runtime myvim/git-gutter.vim
 runtime myvim/vim-go.vim
 runtime myvim/multi-cursors.vim
 runtime myvim/auto-pairs.vim
-runtime myvim/echodoc.vim
 runtime myvim/vim-javasript.vim
-runtime myvim/deoplete.vim
 runtime myvim/tagbar.vim
+runtime myvim/coc.vim
 
 " Apply another settings that are depended
 " on the settings of previous plugins

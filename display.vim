@@ -15,9 +15,8 @@ set cursorcolumn
 
 " commands config
 set showcmd
-set noshowmode
 set showmatch
-set laststatus=2
+set noshowmode
 
 " searching hilighting
 set incsearch

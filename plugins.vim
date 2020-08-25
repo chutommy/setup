@@ -5,15 +5,11 @@ call plug#begin('~/.vim/plugged')
 " == Code display ==
 Plug 'morhetz/gruvbox'
 Plug 'machakann/vim-highlightedyank'
-Plug 'Shougo/echodoc.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " == Completion ==
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'deoplete-plugins/deoplete-go', { 'do': 'make'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " == Code edit ==
 Plug 'terryma/vim-multiple-cursors'
