@@ -71,6 +71,13 @@
         "s": "open:split",
         "S": "open:vsplit"
     },
+    "explorer.sources": [
+        {
+            "name": "file",
+            "expand": true
+        }
+    ],
+    "explorer.icon.enableNerdfont": true,
 
     "highlight.colors.enable": true,
     "highlight.document.enable": true,
