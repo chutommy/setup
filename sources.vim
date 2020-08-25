@@ -12,7 +12,6 @@ source $HOME/.config/nvim/airline.vim
 source $HOME/.config/nvim/fzf.vim
 source $HOME/.config/nvim/fugitive.vim
 source $HOME/.config/nvim/vim-go.vim
-source $HOME/.config/nvim/multi-cursors.vim
 source $HOME/.config/nvim/tagbar.vim
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/nerdcommenter.vim
