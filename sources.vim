@@ -1,18 +1,18 @@
 " === Source files ===
 
 " Include plugins
-runtime myvim/plugins.vim
+source $HOME/.config/nvim/plugins.vim
 
 " Apply plugin's configurations
-runtime myvim/general.vim
-runtime myvim/display.vim
-runtime myvim/mappings.vim
-runtime myvim/colors.vim
-runtime myvim/airline.vim
-runtime myvim/fzf.vim
-runtime myvim/fugitive.vim
-runtime myvim/vim-go.vim
-runtime myvim/multi-cursors.vim
-runtime myvim/tagbar.vim
-runtime myvim/coc.vim
-runtime myvim/nerdcommenter.vim
+source $HOME/.config/nvim/general.vim
+source $HOME/.config/nvim/display.vim
+source $HOME/.config/nvim/mappings.vim
+source $HOME/.config/nvim/colors.vim
+source $HOME/.config/nvim/airline.vim
+source $HOME/.config/nvim/fzf.vim
+source $HOME/.config/nvim/fugitive.vim
+source $HOME/.config/nvim/vim-go.vim
+source $HOME/.config/nvim/multi-cursors.vim
+source $HOME/.config/nvim/tagbar.vim
+source $HOME/.config/nvim/coc.vim
+source $HOME/.config/nvim/nerdcommenter.vim

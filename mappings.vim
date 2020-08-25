@@ -23,11 +23,11 @@ function! ClearSearch()
 endfunction
 
 " shifting
-" nnoremap <Tab> >>_
-" nnoremap <S-Tab> <<_
-" inoremap <S-Tab> <C-D>
-" vnoremap <Tab> >gv
-" vnoremap <S-Tab> <gv
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
+inoremap <S-Tab> <C-D>
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
 
 " fast moving
 noremap <S-l> 5l
