@@ -22,6 +22,7 @@ These are my Neovim files. Feel free to download and modify them.
 ```bash
 git clone https://github.com/chutified/myvim.git \
     && mv -f myvim/* $HOME/.config/nvim/ \
+    && rm -rf myvim \
     && nvim +PlugInstall +qa \
     && nvim +GoInstallBinaries +qa \
     && nvim
