@@ -20,7 +20,6 @@ if (currentHour > 7) && (currentHour < 18)
 else
     set background=dark
 endif
-" manual
 function! BgToggleSol()
     if (&background == "light")
         set background=dark 

@@ -1,7 +1,6 @@
 " === Tagbar ===
 
-nmap <F8> :TagbarOpenAutoClose<CR>
-nmap <S-F8> :TagbarToggle<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " JSON
 let g:tagbar_type_json = {

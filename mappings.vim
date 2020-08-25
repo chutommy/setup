@@ -13,7 +13,10 @@ nnoremap <C-n> :cnext<CR>
 nnoremap <C-m> :cprevious<CR>
 
 " terminal
-nnoremap tt :terminal<CR>
+nnoremap tts :new term://bash<CR>
+nnoremap ttv :vnew term://bash<CR>
+nnoremap top :split term://htop<CR>
+nnoremap vtop :vsplit term://htop<CR>
 
 " highlight
 nnoremap * *``
@@ -25,7 +28,6 @@ endfunction
 " shifting
 nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
-inoremap <S-Tab> <C-D>
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 

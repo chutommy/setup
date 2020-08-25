@@ -42,8 +42,6 @@ let g:coc_global_extensions = [
     \ 'coc-lists',
   \ ]
 
-" mapping
-
 " explorer
 nmap <leader>k :CocCommand explorer<cr>
 
@@ -52,15 +50,9 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 " multi-cursors
-nmap <expr> <silent> <C-b> <SID>select_current_word()
-function! s:select_current_word()
-  if !get(g:, 'coc_cursors_activated', 0)
-    return "\<Plug>(coc-cursors-word)"
-  endif
-  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
-endfunc
+nmap <silent> <C-b> <Plug>(coc-cursors-word)
+xmap <silent> <C-b> <Plug>(coc-cursors-range)
 
-" git
 " navigate chunks of current buffer
 nmap [g <Plug>(coc-git-prevchunk)
 nmap ]g <Plug>(coc-git-nextchunk)
