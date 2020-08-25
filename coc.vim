@@ -37,7 +37,9 @@ let g:coc_global_extensions = [
     \ 'coc-highlight',
     \ 'coc-yank',
     \ 'coc-pairs',
-    \ 'coc-git'
+    \ 'coc-docker',
+    \ 'coc-git',
+    \ 'coc-lists',
   \ ]
 
 " mapping
