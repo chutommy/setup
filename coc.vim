@@ -64,5 +64,5 @@ nmap [g <Plug>(coc-git-prevchunk)
 nmap ]g <Plug>(coc-git-nextchunk)
 " show chunk diff at current position
 nmap <leader>ggp <Plug>(coc-git-chunkinfo)
-nmap <leader>ggu <Plug>(coc-git-chunkundo)
-nmap <leader>ggs <Plug>(coc-git-chunkstage)
+nmap <leader>ggu :CocCommand git.chunkUndo<cr>
+nmap <leader>ggs :CocCommand git.chunkStage<cr>
