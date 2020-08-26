@@ -15,5 +15,6 @@ Plug 'majutsushi/tagbar'
 Plug 'fatih/vim-go'
 Plug 'ryanoasis/vim-devicons'
 Plug 'LeafCage/yankround.vim'
+Plug 'junegunn/vim-emoji'
 
 call plug#end()

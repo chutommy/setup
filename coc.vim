@@ -42,6 +42,7 @@ let g:coc_global_extensions = [
     \ 'coc-lists',
     \ 'coc-ultisnips',
     \ 'coc-fzf-preview',
+    \ 'coc-calc',
   \ ]
 
 " explorer
@@ -81,3 +82,7 @@ nnoremap <silent> [fzf-p]o     :<C-u>:CocCommand fzf-preview.ProjectFiles<CR>
 
 let g:fzf_preview_floating_window_rate = 0.85
 let g:fzf_preview_use_dev_icons = 1
+
+" calc
+nmap <Leader>cca <Plug>(coc-calc-result-append)
+nmap <Leader>ccr <Plug>(coc-calc-result-replace)
