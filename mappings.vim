@@ -13,8 +13,8 @@ nnoremap <C-n> :cnext<CR>
 nnoremap <C-m> :cprevious<CR>
 
 " terminal
-nnoremap tts :new term://bash<CR>
-nnoremap ttv :vnew term://bash<CR>
+nnoremap tts :new term://bash<CR>i
+nnoremap ttv :vnew term://bash<CR>i
 nnoremap top :split term://htop<CR>
 nnoremap vtop :vsplit term://htop<CR>
 
@@ -35,5 +35,5 @@ vnoremap <S-Tab> <gv
 noremap <S-l> 5l
 noremap <S-h> 5h
 
-" change colorscheme mode
+" colorscheme
 nmap <leader>bg :<C-u>call BgAyu("")<left><left>
