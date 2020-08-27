@@ -1,7 +1,7 @@
 " === Airline ===
 
 " theme
-let g:airline_theme='gruvbox'
+let g:airline_theme='ayu'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " symbols

@@ -34,3 +34,6 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 5l
 noremap <S-h> 5h
+
+" change colorscheme mode
+nmap <leader>bg :<C-u>call BgAyu("")<left><left>
