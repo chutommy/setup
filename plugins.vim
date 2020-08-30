@@ -15,7 +15,7 @@ Plug 'fatih/vim-go'
 Plug 'ryanoasis/vim-devicons'
 Plug 'LeafCage/yankround.vim'
 Plug 'junegunn/vim-emoji'
-" Plug 'morhetz/gruvbox'
 Plug 'ayu-theme/ayu-vim'
+Plug 'cespare/vim-toml'
 
 call plug#end()
