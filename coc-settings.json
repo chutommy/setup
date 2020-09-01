@@ -100,5 +100,15 @@
     "git.command": "git",
     "git.remoteName": "origin",
     "git.enableGutters": true,
-    "git.enableGlobalStatus": true
+    "git.enableGlobalStatus": true,
+    "git.addedSign.text": "A",
+    "git.addedSign.hlGroup": "DiffAdd",
+    "git.changedSign.text": "M",
+    "git.changedSign.hlGroup": "DiffChange",
+    "git.changeRemovedSign.text": "MD",
+    "git.changeRemovedSign.hlGroup": "DiffChange",
+    "git.removedSign.text": "D🠙",
+    "git.removedSign.hlGroup": "DiffDelete",
+    "git.topRemovedSign.text": "D🠛",
+    "git.topRemovedSign.hlGroup": "DiffDelete"
 }
