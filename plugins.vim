@@ -4,10 +4,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'ayu-theme/ayu-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
-Plug 'yuki-ycino/fzf-preview.vim', { 'branch': 'release', 'do': ':UpdateRemotePlugins' }
-Plug 'antoinemadec/coc-fzf'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'preservim/nerdtree'

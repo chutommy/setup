@@ -38,7 +38,6 @@ let g:coc_global_extensions = [
     \ 'coc-pairs',
     \ 'coc-docker',
     \ 'coc-ultisnips',
-    \ 'coc-fzf-preview',
     \ 'coc-calc',
   \ ]
 
@@ -49,25 +48,6 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " multi-cursors
 nmap <silent> <C-b> <Plug>(coc-cursors-word)
 xmap <silent> <C-b> <Plug>(coc-cursors-range)
-
-" fzf
-nmap <Leader>o [fzf-p]
-xmap <Leader>o [fzf-p]
-
-nnoremap <silent> [fzf-p]gs    :<C-u>CocCommand fzf-preview.GitStatus<CR>
-nnoremap <silent> [fzf-p]ga    :<C-u>CocCommand fzf-preview.GitActions<CR>
-nnoremap <silent> [fzf-p]b     :<C-u>CocCommand fzf-preview.Buffers<CR>
-nnoremap <silent> [fzf-p]B     :<C-u>CocCommand fzf-preview.AllBuffers<CR>
-nnoremap <silent> [fzf-p]c    :<C-u>CocCommand fzf-preview.Changes<CR>
-nnoremap <silent> [fzf-p]p     :<C-u>CocCommand fzf-preview.Lines --add-fzf-arg=--no-sort --add-fzf-arg=--query="'"<CR>
-nnoremap <silent> [fzf-p]t     :<C-u>CocCommand fzf-preview.BufferTags<CR>
-nnoremap <silent> [fzf-p]q     :<C-u>CocCommand fzf-preview.QuickFix<CR>
-nnoremap <silent> [fzf-p]y     :<C-u>CocCommand fzf-preview.Yankround<CR>
-nnoremap <silent> [fzf-p]d     :<C-u>CocCommand fzf-preview.CocCurrentDiagnostics<CR>
-nnoremap <silent> [fzf-p]o     :<C-u>:CocCommand fzf-preview.ProjectFiles<CR>
-
-let g:fzf_preview_floating_window_rate = 0.85
-let g:fzf_preview_use_dev_icons = 1
 
 " calc
 nmap <Leader>cca <Plug>(coc-calc-result-append)
