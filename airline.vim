@@ -3,6 +3,7 @@
 " theme
 let g:airline_theme='ayu'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline#extensions#nerdtree_status = 1
 
 " symbols
 if !exists('g:airline_symbols')

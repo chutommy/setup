@@ -19,5 +19,6 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'cespare/vim-toml'
 Plug 'mattn/emmet-vim'
 Plug 'airblade/vim-gitgutter'
+Plug 'preservim/nerdtree'
 
 call plug#end()

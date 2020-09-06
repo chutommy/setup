@@ -33,7 +33,6 @@ let g:coc_global_extensions = [
     \ 'coc-markdownlint',
     \ 'coc-css',
     \ 'coc-emmet',
-    \ 'coc-explorer',
     \ 'coc-highlight',
     \ 'coc-pairs',
     \ 'coc-docker',
@@ -42,9 +41,6 @@ let g:coc_global_extensions = [
     \ 'coc-fzf-preview',
     \ 'coc-calc',
   \ ]
-
-" explorer
-nmap <leader>k :CocCommand explorer<cr>
 
 " format
 xmap <leader>f  <Plug>(coc-format-selected)

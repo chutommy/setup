@@ -63,22 +63,6 @@
     "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
     "emmet.showAbbreviationSuggestions": true,
     
-    "explorer.toggle": true,
-    "explorer.focus": true,
-    "explorer.position": "left",
-    "explorer.width": 36,
-    "explorer.keyMappings": {
-        "s": "open:split",
-        "S": "open:vsplit"
-    },
-    "explorer.sources": [
-        {
-            "name": "file",
-            "expand": true
-        }
-    ],
-    "explorer.icon.enableNerdfont": true,
-
     "highlight.colors.enable": true,
     "highlight.document.enable": true,
 

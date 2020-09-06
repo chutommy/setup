@@ -16,3 +16,4 @@ source $HOME/.config/nvim/tagbar.vim
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/emmet.vim
 source $HOME/.config/nvim/git-gutter.vim
+source $HOME/.config/nvim/nerdtree.vim
