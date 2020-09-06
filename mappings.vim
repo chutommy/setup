@@ -36,4 +36,4 @@ noremap <S-l> 5l
 noremap <S-h> 5h
 
 " colorscheme
-nmap <leader>bg :<C-u>call BgAyu("")<left><left>
+nmap <leader>bg :<C-u>call BgAyuSwitch()<cr>

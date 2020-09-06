@@ -20,18 +20,13 @@ else
 endif
 
 " switch function
-function BgAyu(mode)
-    if (a:mode == "light")
-        let g:ayucolor="light"
-        let g:airline_theme="ayu_light"
-        set background=light
-        colorscheme ayu
-    elseif (a:mode == "mirage")
+function BgAyuSwitch()
+    if (g:ayucolor == "dark")
         let g:ayucolor="mirage"
         let g:airline_theme="ayu_mirage"
         set background=dark
         colorscheme ayu
-    elseif (a:mode == "dark")
+    else
         let g:ayucolor="dark"
         let g:airline_theme="ayu_dark"
         set background=dark
