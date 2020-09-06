@@ -38,7 +38,6 @@ let g:coc_global_extensions = [
     \ 'coc-pairs',
     \ 'coc-docker',
     \ 'coc-ultisnips',
-    \ 'coc-calc',
   \ ]
 
 " format
@@ -48,7 +47,3 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " multi-cursors
 nmap <silent> <C-b> <Plug>(coc-cursors-word)
 xmap <silent> <C-b> <Plug>(coc-cursors-range)
-
-" calc
-nmap <Leader>cca <Plug>(coc-calc-result-append)
-nmap <Leader>ccr <Plug>(coc-calc-result-replace)
