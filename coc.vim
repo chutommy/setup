@@ -38,7 +38,6 @@ let g:coc_global_extensions = [
     \ 'coc-yank',
     \ 'coc-pairs',
     \ 'coc-docker',
-    \ 'coc-git',
     \ 'coc-lists',
     \ 'coc-ultisnips',
     \ 'coc-fzf-preview',
@@ -55,14 +54,6 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " multi-cursors
 nmap <silent> <C-b> <Plug>(coc-cursors-word)
 xmap <silent> <C-b> <Plug>(coc-cursors-range)
-
-" navigate chunks of current buffer
-nmap [g <Plug>(coc-git-prevchunk)
-nmap ]g <Plug>(coc-git-nextchunk)
-" show chunk diff at current position
-nmap <leader>ggp <Plug>(coc-git-chunkinfo)
-nmap <leader>ggu :CocCommand git.chunkUndo<cr>
-nmap <leader>ggs :CocCommand git.chunkStage<cr>
 
 " fzf
 nmap <Leader>o [fzf-p]
