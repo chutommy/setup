@@ -35,7 +35,6 @@ let g:coc_global_extensions = [
     \ 'coc-emmet',
     \ 'coc-explorer',
     \ 'coc-highlight',
-    \ 'coc-yank',
     \ 'coc-pairs',
     \ 'coc-docker',
     \ 'coc-lists',

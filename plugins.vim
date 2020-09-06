@@ -18,5 +18,6 @@ Plug 'LeafCage/yankround.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cespare/vim-toml'
 Plug 'mattn/emmet-vim'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()

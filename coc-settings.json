@@ -82,11 +82,6 @@
     "highlight.colors.enable": true,
     "highlight.document.enable": true,
 
-    "yank.highlight.enable": true,
-    "yank.highlight.duration": 800,
-    "yank.list.maxsize": 100,
-    "yank.enableCompletion": true,
-
     "pairs.enableCharacters": [
         "(",
         "[",
