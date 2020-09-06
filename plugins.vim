@@ -19,5 +19,6 @@ Plug 'fatih/vim-go'
 Plug 'LeafCage/yankround.vim'
 Plug 'cespare/vim-toml'
 Plug 'mattn/emmet-vim'
+Plug 'machakann/vim-highlightedyank'
 
 call plug#end()
