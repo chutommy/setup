@@ -2,19 +2,18 @@
     "json.enable": true,
     "json.trace.server": "verbose",
     "json.format.enable": true,
-
     "yaml.format.enable": true,
     "yaml.format.singleQuote": true,
     "yaml.validate": true,
     "yaml.completion": true,
-
     "go.enable": true,
     "go.checkForUpdates": "ask",
     "go.disable": {
         "completion": false,
         "diagnostics": false,
-        "workspaceFolders": false
+        "workspaceFolders": true
     },
+    "go.enable": true,
     "go.goplsOptions": {
         "completeUnimported": true,
         "completionDocumentation": true,
@@ -23,17 +22,13 @@
         "linkTarget": "pkg.go.dev",
         "usePlaceholders": false
     },
-
     "vimlsp.diagnostic.enable": true,
-
     "jedi.enable": true,
     "jedi.startupMessage": true,
-
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
     "sql.lintOnChange": true,
     "sql.database": "postgresql",
-
     "html.enable": true,
     "html.filetypes": [
         "html",
@@ -44,28 +39,23 @@
     "html.validate.html": true,
     "html.validate.styles": true,
     "html.validate.scripts": true,
-
     "markdownlint.onOpen": true,
     "markdownlint.onSave": true,
     "markdownlint.onChange": true,
     "markdownlint.config": {
         "default": true
     },
-
     "css.enable": true,
     "css.validate": true,
     "css.colorDecorators.enable": true,
     "css.completion.completePropertyWithSemicolon": true,
     "css.completion.triggerPropertyValueCompletion": true,
     "scss.completion.completePropertyWithSemicolon": true,
-    "scss.completion.triggerPropertyValueCompletion":true,
-
+    "scss.completion.triggerPropertyValueCompletion": true,
     "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
     "emmet.showAbbreviationSuggestions": true,
-    
     "highlight.colors.enable": true,
     "highlight.document.enable": true,
-
     "pairs.enableCharacters": [
         "(",
         "[",
