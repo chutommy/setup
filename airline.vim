@@ -13,6 +13,9 @@ let g:airline#extensions#tagbar#enabled = 1
 let g:airline#extensions#coc#enabled = 1
 let airline#extensions#coc#error_symbol = 'E:'
 let airline#extensions#coc#warning_symbol = 'W:'
+let g:airline#extensions#clock#auto = 1
+let g:airline#extensions#clock#format = '%H:%M'
+let g:airline#extensions#clock#updatetime = 60000
 
 " tabline
   let g:airline#extensions#tabline#enabled = 1
