@@ -17,5 +17,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'LeafCage/yankround.vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'cespare/vim-toml'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
