@@ -15,19 +15,11 @@ These are my Neovim files. Feel free to download and modify them.
 - [Fzf](https://github.com/junegunn/fzf)
 - [ctags](http://ctags.sourceforge.net)
 
-### Install
+### Update commands
 
-#### Linux/Mac
-
-```bash
-git clone https://github.com/chutified/myvim.git \
-    && rm -rf $HOME/.config/nvim_old/ \
-    && mv -f $HOME/.config/nvim/ $HOME/.config/nvim_old/ \
-    && mv -f myvim/ $HOME/.config/nvim/ \
-    && nvim +PlugUpgrade +qa \
-    && nvim +PlugInstall +qa \
-    && nvim +GoInstallBinaries +qa \
-    && nvim +CocUpdate +qa \
-    && nvim +UpdateRemotePlugins +qa \
-    && nvim +checkhealth
-````
+- PlugUpgrade
+- PlugInstall
+- GoInstallBinaries
+- CocUpdate
+- UpdateRemotePlugins
+- checkhealth
