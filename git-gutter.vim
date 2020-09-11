@@ -4,8 +4,8 @@ let g:gitgutter_max_signs = -1
 
 " mappings
 nmap <leader>ggs <Plug>(GitGutterStageHunk)
-nmap <leader>gu <Plug>(GitGutterUndoHunk)
-nmap <leader>gp <Plug>(GitGutterPreviewHunk)
+nmap <leader>ggu <Plug>(GitGutterUndoHunk)
+nmap <leader>ggp <Plug>(GitGutterPreviewHunk)
 nmap ]g <Plug>(GitGutterNextHunk)
 nmap [g <Plug>(GitGutterPrevHunk)
 
