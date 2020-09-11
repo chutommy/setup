@@ -19,7 +19,7 @@ These are my Neovim files. Feel free to download and modify them.
 
 - PlugUpgrade
 - PlugInstall
-- GoInstallBinaries
+- GoUpdateBinaries (GoInstallBinaries for the first time)
 - CocUpdate
 - UpdateRemotePlugins
 - checkhealth
