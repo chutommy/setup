@@ -20,7 +20,7 @@ else
 endif
 
 " switch function
-function BgAyuSwitch()
+function BGSwitch()
     if (g:ayucolor == "dark")
         let g:ayucolor="mirage"
         let g:airline_theme="ayu_mirage"
