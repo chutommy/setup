@@ -21,5 +21,6 @@ Plug 'LeafCage/yankround.vim'
 Plug 'cespare/vim-toml'
 Plug 'mattn/emmet-vim'
 Plug 'machakann/vim-highlightedyank'
+Plug 'justinmk/vim-sneak'
 
 call plug#end()
