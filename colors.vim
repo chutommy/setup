@@ -19,7 +19,7 @@ else
     colorscheme ayu
 endif
 
-" switch function
+" switch background function
 function BGSwitch()
     if (g:ayucolor == "dark")
         let g:ayucolor="mirage"

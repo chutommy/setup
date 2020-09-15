@@ -1,7 +1,6 @@
 " === Fzf ===
 
 " set the window
-"map <leader>o :FZF<enter>
 nnoremap <leader>o :Files<cr>
 nnoremap <leader>pp :BLines<cr>
 nnoremap <leader>pg :GFiles?<cr>
