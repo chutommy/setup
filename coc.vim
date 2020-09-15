@@ -46,5 +46,10 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 " multi-cursors
-nmap <silent> <C-b> <Plug>(coc-cursors-word)
-xmap <silent> <C-b> <Plug>(coc-cursors-range)
+nmap <expr> <silent> <C-b> <SID>select_current_word()
+function! s:select_current_word()
+  if !get(g:, 'coc_cursors_activated', 0)
+    return "\<Plug>(coc-cursors-word)"
+  endif
+  return "*\<Plug>(coc-cursors-word):nohlsearch\<CR>"
+endfunc
