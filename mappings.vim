@@ -34,3 +34,6 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 5l
 noremap <S-h> 5h
+
+" switch background
+nnoremap <leader>sb :call BGSwitch()<CR>
