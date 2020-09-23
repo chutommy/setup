@@ -6,12 +6,6 @@ autocmd FileType go nmap <leader>gt  <Plug>(go-test)
 autocmd FileType go nmap <leader>cc <Plug>(go-coverage-toggle)
 autocmd FileType go nmap <leader>s <Plug>(go-describe)
 
-" debug
-autocmd FileType go nmap <leader>dbs :GoDebugStart 
-autocmd FileType go nmap <leader>dbt :GoDebugTest 
-autocmd FileType go nmap <leader>dbr :GoDebugRestart<CR>
-autocmd FileType go nmap <leader>dbe <Plug>(go-debug-stop)
-
 " check code
 autocmd FileType go map <leader>v :w<CR>:GoVet<enter>
 autocmd FileType go map <leader>l :w<CR>:GoLint<enter>
