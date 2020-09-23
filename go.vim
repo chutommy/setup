@@ -9,7 +9,7 @@ autocmd FileType go nmap <leader>s <Plug>(go-describe)
 " debug
 autocmd FileType go nmap <leader>dbs :GoDebugStart 
 autocmd FileType go nmap <leader>dbt :GoDebugTest 
-autocmd FileType go nmap <leader>dbr :GoDebugRestart<cr>
+autocmd FileType go nmap <leader>dbr :GoDebugRestart<CR>
 autocmd FileType go nmap <leader>dbe <Plug>(go-debug-stop)
 
 " check code

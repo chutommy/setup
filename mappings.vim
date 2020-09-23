@@ -4,9 +4,9 @@ let mapleader=","
 
 " tab
 nnoremap <leader>tt :tabnew<CR>
-nnoremap <leader>tc :tabclose<cr>
-nnoremap <leader>tn :tabnext<cr>
-nnoremap <leader>tp :tabprevious<cr>
+nnoremap <leader>tc :tabclose<CR>
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabprevious<CR>
 
 " errs
 nnoremap <C-n> :cnext<CR>
