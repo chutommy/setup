@@ -20,3 +20,4 @@ source $HOME/.config/nvim/go.vim
 source $HOME/.config/nvim/emmet.vim
 source $HOME/.config/nvim/yank.vim
 source $HOME/.config/nvim/sneak.vim
+source $HOME/.config/nvim/delve.vim

@@ -22,5 +22,6 @@ Plug 'cespare/vim-toml'
 Plug 'mattn/emmet-vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'justinmk/vim-sneak'
+Plug 'sebdah/vim-delve'
 
 call plug#end()
