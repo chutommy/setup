@@ -13,11 +13,10 @@
         "diagnostics": false,
         "workspaceFolders": true
     },
-    "go.enable": true,
     "go.goplsOptions": {
         "completeUnimported": true,
         "completionDocumentation": true,
-        "fuzzyMatching": true,
+        "matcher":"fuzzy",
         "hoverKind": "SynopsisDocumentation",
         "linkTarget": "pkg.go.dev",
         "usePlaceholders": false
