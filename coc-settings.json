@@ -24,6 +24,7 @@
     "vimlsp.diagnostic.enable": true,
     "jedi.enable": true,
     "jedi.startupMessage": false,
+    "python.autoComplete.addBrackets": true,
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
     "sql.lintOnChange": true,
