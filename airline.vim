@@ -18,11 +18,11 @@ let g:airline#extensions#clock#format = '%H:%M'
 let g:airline#extensions#clock#updatetime = 60000
 
 " tabline
-  let g:airline#extensions#tabline#enabled = 1
-  let g:airline#extensions#tabline#show_splits = 1
-  let g:airline#extensions#tabline#show_tab_count = 2
-  let g:airline#extensions#tabline#exclude_preview = 1
-  let g:airline#extensions#tabline#tab_nr_type = 2 " splits and tab number
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_splits = 1
+let g:airline#extensions#tabline#show_tab_count = 2
+let g:airline#extensions#tabline#exclude_preview = 1
+let g:airline#extensions#tabline#tab_nr_type = 2 " splits and tab number
 
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 nmap <leader>1 <Plug>AirlineSelectTab1
