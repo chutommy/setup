@@ -23,7 +23,7 @@
     },
     "vimlsp.diagnostic.enable": true,
     "jedi.enable": true,
-    "jedi.startupMessage": true,
+    "jedi.startupMessage": false,
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
     "sql.lintOnChange": true,
