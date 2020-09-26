@@ -19,8 +19,8 @@ These are my Neovim files. Feel free to download and modify them.
 ### Update commands
 
 - `:PlugUpgrade`
-- `:PlugInstall`
-- `:GoUpdateBinaries` (`:GoInstallBinaries`)
+- `:PlugInstall`/`:PlugUpdate`
+- `:GoInstallBinaries`/`:GoUpdateBinaries`
 - `:CocUpdate`
 - `:UpdateRemotePlugins`
 - `:checkhealth`
