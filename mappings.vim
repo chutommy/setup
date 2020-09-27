@@ -18,6 +18,18 @@ nnoremap ttv :vnew term://bash<CR>i
 nnoremap top :split term://htop<CR>
 nnoremap vtop :vsplit term://htop<CR>
 
+" Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+
+" Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
 " highlight
 nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
 function! ClearSearch()
