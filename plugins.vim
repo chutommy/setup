@@ -9,14 +9,21 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'enricobacis/vim-airline-clock'
 Plug 'itchyny/lightline.vim'
+
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'preservim/nerdcommenter'
 Plug 'majutsushi/tagbar'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-Plug 'preservim/nerdcommenter'
 Plug 'LeafCage/yankround.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
