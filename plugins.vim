@@ -10,7 +10,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'itchyny/lightline.vim'
-Plug 'majutsushi/tagbar'
+Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
