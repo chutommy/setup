@@ -9,7 +9,6 @@ source $HOME/.config/nvim/display.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/mappings.vim
 
-" source $HOME/.config/nvim/airline.vim
 source $HOME/.config/nvim/lightline.vim
 source $HOME/.config/nvim/coc.vim
 
@@ -25,4 +24,3 @@ source $HOME/.config/nvim/git-gutter.vim
 
 source $HOME/.config/nvim/go.vim
 source $HOME/.config/nvim/delve.vim
-source $HOME/.config/nvim/emmet.vim
