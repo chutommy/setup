@@ -18,7 +18,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 Plug 'preservim/nerdcommenter'
-Plug 'LeafCage/yankround.vim'
 Plug 'machakann/vim-highlightedyank'
 Plug 'mattn/emmet-vim'
 Plug 'justinmk/vim-sneak'
