@@ -19,7 +19,6 @@ nnoremap top :split term://htop<CR>
 nnoremap vtop :vsplit term://htop<CR>
 
 " highlight
-nnoremap * *``
 nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
 function! ClearSearch()
     let @/=""
@@ -34,6 +33,3 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 4l
 noremap <S-h> 4h
-
-" switch background
-nnoremap <leader>sb :call BGSwitch()<CR>
