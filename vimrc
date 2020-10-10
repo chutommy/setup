@@ -1,3 +1,14 @@
+" === Plugins ===
+
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'preservim/nerdcommenter'
+Plug 'machakann/vim-highlightedyank'
+Plug 'justinmk/vim-sneak'
+call plug#end()
+
 " === General ===
 
 syntax on
@@ -37,10 +48,9 @@ set lazyredraw
 set history=666
 set formatoptions+=j
 
-" === Display ===
+" === Display===
 
 set t_Co=256
-set termguicolors
 " show invisible chars
 set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
 
@@ -56,7 +66,7 @@ set cursorcolumn
 " commands config
 set showcmd
 set showmatch
-" set noshowmode
+set noshowmode
 
 " searching hilighting
 set incsearch
@@ -66,6 +76,10 @@ set hlsearch
 set wrap
 set scrolloff=4
 set sidescrolloff=4
+
+" coloring
+set termguicolors
+set colort
 
 " === Keymaps ===
 
@@ -114,3 +128,71 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 4l
 noremap <S-h> 4h
+
+" === Fzf ===
+
+" set the window
+nnoremap <leader>o :Files<cr>
+nnoremap <leader>i :BLines<cr>
+nnoremap <leader>h :History:<cr>
+let g:fzf_layout = { 'down': '~33%' }
+let g:fzf_preview_window = 'right:66%'
+let g:fzf_buffers_jump = 0
+
+" enable the pos of the opening window
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-s': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
+autocmd! FileType fzf
+autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+
+" === NERD Commenter===
+
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+let g:NERDDefaultAlign = 'left'
+let g:NERDToggleCheckAllLines = 1
+
+"=== NERDTree ===
+
+nnoremap <leader>k :NERDTreeToggle<enter>
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+let g:NERDTreeNaturalSort = 1
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeWinSize = 33
+let g:NERDTreeMinimalUI = 1
+
+let g:NERDTreeHighlightFolders = 1
+let g:NERDTreeHighlightFoldersFullName = 1
+let g:NERDTreeLimitedSyntax = 1
+
+" === Sneak ===
+
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+
+" === Sneak ===
+
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
