@@ -1,5 +1,15 @@
 # .bashrc
 
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -23,15 +33,27 @@ HISTFILESIZE=10000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
-shopt -s globstar
-
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 force_color_prompt=yes
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+	# We have color support; assume it's compliant with Ecma-48
+	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+	# a case would tend to support setf rather than setaf.)
+	color_prompt=yes
+    else
+	color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    PS1='\[\e[0;91m\]┌──[\[\e[0;2;97m\]$?\[\e[0;91m\]]\[\e[0;91m\]─\[\e[0;91m\][\[\e[0;1;38;5;226m\]\u\[\e[0;97m\]@\[\e[0;38;5;51m\]\H\[\e[0;1;93m\]:\[\e[0;97m\]\w\[\e[0;91m\]]\[\e[m\] \[\e[0;2;37m\](\[\e[0;2;37m\]$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR==1{split($2,a," ");print a[1]}'"'"')\[\e[0;2;37m\])\[\e0\n\[\e[0;91m\]└───╼\[\e[m\] \[\e[0;1;91m\]\$\[\e[m\] \[\e0'
+else
+    PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
+fi
 
 # enable color support of ls, less and man, and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -53,6 +75,7 @@ if [ -x /usr/bin/dircolors ]; then
     export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
     export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 fi
+unset color_prompt force_color_prompt
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
@@ -68,13 +91,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# custom command prompt
-PS1='\[\e[0m\][\[\e[0;1;91m\]\u\[\e[0m\]@\[\e[0;1;38;5;27m\]\h\[\e[m\] \[\e[0;2m\](\[\e[0;2m\]$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR==1{split($2,a," ");print a[1]}'"'"')\[\e[0;2m\])\[\e[m\] \[\e[0;3m\]\w\[\e[0m\]]\[\e[0m\]\$\[\e[m\] \[\e0'
-
 # User specific aliases and functions
 
-export PATH=$PATH:/usr/local/go/bin
 alias vim='nvim'
+
+export PATH=$PATH:/usr/local/go/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
