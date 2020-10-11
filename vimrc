@@ -52,7 +52,7 @@ set formatoptions+=j
 
 set t_Co=256
 " show invisible chars
-set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
+set listchars=tab:\>\ ,trail:+,eol:$,nbsp:_
 
 " show numers
 set list
@@ -79,7 +79,7 @@ set sidescrolloff=4
 
 " coloring
 set termguicolors
-set colort
+colorscheme default
 
 " === Keymaps ===
 
