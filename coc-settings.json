@@ -16,7 +16,7 @@
     "go.goplsOptions": {
         "completeUnimported": true,
         "completionDocumentation": true,
-        "matcher":"fuzzy",
+        "matcher":"Fuzzy",
         "hoverKind": "SynopsisDocumentation",
         "linkTarget": "pkg.go.dev",
         "usePlaceholders": false
