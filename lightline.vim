@@ -133,7 +133,7 @@ let g:lightline = {
     \   'tabline': 1
     \ },
     \ 'colorscheme': 'powerline',
-    \ 'separator': { 'left': '', 'right': '' },
+    \ 'separator': { 'left': '|', 'right': '|' },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
 " }}}
