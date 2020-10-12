@@ -2,5 +2,5 @@
 
 " coloring
 set termguicolors
-let g:ayucolor="mirage"
+let g:ayucolor="dark"
 colorscheme ayu

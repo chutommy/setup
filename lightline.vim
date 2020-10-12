@@ -132,7 +132,7 @@ let g:lightline = {
     \   'statusline': 1,
     \   'tabline': 1
     \ },
-    \ 'colorscheme': 'ayu_mirage',
+    \ 'colorscheme': 'ayu_dark',
     \ 'separator': { 'left': '', 'right': '' },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
