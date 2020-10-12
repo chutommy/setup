@@ -45,7 +45,7 @@
     "markdownlint.onSave": true,
     "markdownlint.onChange": true,
     "markdownlint.config": {
-        "default": true
+        "default": false
     },
     "css.enable": true,
     "css.validate": true,
