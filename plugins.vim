@@ -2,15 +2,12 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'ayu-theme/ayu-vim'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
 Plug 'itchyny/lightline.vim'
-Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
