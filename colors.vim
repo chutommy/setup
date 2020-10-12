@@ -1,4 +1,6 @@
 " === Colors ===
 
+" coloring
 set termguicolors
-colorscheme default
+let g:ayucolor="mirage"
+colorscheme ayu

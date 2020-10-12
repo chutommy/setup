@@ -13,6 +13,7 @@ source $HOME/.config/nvim/lightline.vim
 source $HOME/.config/nvim/coc.vim
 
 source $HOME/.config/nvim/fzf.vim
+source $HOME/.config/nvim/tagbar.vim
 source $HOME/.config/nvim/nerdtree.vim
 source $HOME/.config/nvim/nerdcommenter.vim
 source $HOME/.config/nvim/yank.vim
