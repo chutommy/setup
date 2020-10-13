@@ -132,11 +132,18 @@ let g:lightline = {
     \   'statusline': 1,
     \   'tabline': 1
     \ },
-    \ 'colorscheme': 'ayu_dark',
-    \ 'separator': { 'left': '', 'right': '' },
+    \ 'colorscheme': 'default',
+    \ 'separator': { 'left': '', 'right': '' },
     \ 'subseparator': { 'left': '|', 'right': '|' }
     \ }
 " }}}
 
 " Disable the built-in mode indicator since this functionality is provided by lightline
 set noshowmode
+
+" if enabled, use ayu
+if enable_ayu
+    let g:lightline = {
+        \ 'colorscheme' : 'ayu_dark'
+      \ }
+endif

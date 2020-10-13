@@ -1,5 +1,8 @@
 " === Source files ===
 
+" settings
+source $HOME/.config/nvim/settings.vim
+
 " Include plugins
 source $HOME/.config/nvim/plugins.vim
 
@@ -24,3 +27,5 @@ source $HOME/.config/nvim/git-gutter.vim
 
 source $HOME/.config/nvim/go.vim
 source $HOME/.config/nvim/delve.vim
+
+source $HOME/.config/nvim/devicons.vim
