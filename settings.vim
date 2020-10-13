@@ -1,7 +1,7 @@
 " === Settings ===
 
 " colorscheme
-let enable_ayu = 0
+let enable_ayu = 1
 
 " devicons
-let enable_webdevicons = 0
+let enable_webdevicons = 1
