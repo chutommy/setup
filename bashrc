@@ -33,27 +33,10 @@ HISTFILESIZE=10000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# set a fancy prompt (non-color, unless we know we "want" color)
-case "$TERM" in
-    xterm-color|*-256color) color_prompt=yes;;
-esac
-force_color_prompt=yes
-if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
-fi
-
-if [ "$color_prompt" = yes ]; then
-    PS1='\[\e[0;91m\]┌──[\[\e[0;2;97m\]$?\[\e[0;91m\]]\[\e[0;91m\]─\[\e[0;91m\][\[\e[0;1;38;5;226m\]\u\[\e[0;97m\]@\[\e[0;38;5;51m\]\H\[\e[0;1;93m\]:\[\e[0;97m\]\w\[\e[0;91m\]]\[\e[m\] \[\e[0;2;37m\](\[\e[0;2;37m\]$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR==1{split($2,a," ");print a[1]}'"'"')\[\e[0;2;37m\])\[\e0\n\[\e[0;91m\]└─╼\[\e[m\] \[\e[0;1;91m\]\$\[\e[0;2;37m\]/\[\e[0;2;37m\]>\[\e[m\] \[\e0'
-else
-    PS1='┌──[\u@\h:\w]\n└──╼ \$ '
-fi
+# set colors
+color_prompt=yes
+#PS1='\[\e[0;91m\]┌──[\[\e[0;2;97m\]$?\[\e[0;91m\]]\[\e[0;91m\]─\[\e[0;91m\][\[\e[0;1;38;5;226m\]\u\[\e[0;97m\]@\[\e[0;38;5;51m\]\H\[\e[0;1;93m\]:\[\e[0;97m\]\w\[\e[0;91m\]]\[\e[m\] \[\e[0;2;37m\](\[\e[0;2;37m\]$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR==1{split($2,a," ");print a[1]}'"'"')\[\e[0;2;37m\])\[\e0\n\[\e[0;91m\]└─╼\[\e[m\] \[\e[0;1;91m\]\$\[\e[0;2;37m\]/\[\e[0;2;37m\]>\[\e[m\] \[\e0'
+PS1='\[\e[0m\][\[\e[0;1;91m\]\u\[\e[0m\]@\[\e[0;94m\]\h\[\e[m\] \[\e[0m\]\W\[\e[0m\]]\[\e[0m\]\$\[\e[m\] \[\e0'
 
 # enable color support of ls, less and man, and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
