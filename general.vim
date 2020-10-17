@@ -3,9 +3,6 @@
 syntax on
 filetype plugin indent on
 
-" disable sql omni-completion
-let g:ftplugin_sql_omni_key = '<leader>sql'
-
 " disable backup
 set noswapfile
 set noerrorbells
