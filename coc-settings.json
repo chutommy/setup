@@ -30,7 +30,7 @@
     "sql.lintOnOpen": true,
     "sql.lintOnSave": true,
     "sql.lintOnChange": true,
-    "sql.database": "postgresql",
+    "sql.database": "mysql",
     "html.enable": true,
     "html.filetypes": [
         "html",
