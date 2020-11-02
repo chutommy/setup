@@ -79,6 +79,7 @@ fi
 alias vim='nvim'
 
 export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
