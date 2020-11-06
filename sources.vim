@@ -20,7 +20,6 @@ source $HOME/.config/nvim/tagbar.vim
 source $HOME/.config/nvim/nerdtree.vim
 source $HOME/.config/nvim/nerdcommenter.vim
 source $HOME/.config/nvim/yank.vim
-source $HOME/.config/nvim/sneak.vim
 
 source $HOME/.config/nvim/fugitive.vim
 source $HOME/.config/nvim/git-gutter.vim
