@@ -16,9 +16,16 @@
     "go.goplsOptions": {
         "completeUnimported": true,
         "completionDocumentation": true,
-        "matcher":"Fuzzy",
+        "deepCompletion": true,
+        "expandWorkspaceToModule": true,
         "hoverKind": "SynopsisDocumentation",
+        "importShortcut": "Both",
         "linkTarget": "pkg.go.dev",
+        "linksInHover": true,
+        "matcher":"Fuzzy",
+        "symbolStyle": "Full",
+        "symbolMatcher": "Fuzzy",
+        "tempModfile": true,
         "usePlaceholders": false
     },
     "vimlsp.diagnostic.enable": true,
