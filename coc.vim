@@ -30,6 +30,7 @@ let g:coc_global_extensions = [
     \ 'coc-sh',
     \ 'coc-sql',
     \ 'coc-tsserver',
+    \ 'coc-prettier',
     \ 'coc-html',
     \ 'coc-css',
     \ 'coc-markdownlint',
