@@ -4,6 +4,9 @@ set t_Co=256
 " show invisible chars
 set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
 
+" semi-transparent popupmenu
+set pumblend=25
+
 " show numers
 set list
 set number
