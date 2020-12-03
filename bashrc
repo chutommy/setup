@@ -62,6 +62,7 @@ unset color_prompt force_color_prompt
 
 # colored GCC warnings and errors
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+PS1='\[\e[0m\][\[\e[0;1;91m\]\u\[\e[0;91m\]@\[\e[0;1;94m\]\H\[\e[m\] \[\e[0;2;3m\]\w\[\e[0m\]]\[\e[m\] \[\e[0;1;53;95m\]$(git branch 2>/dev/null | grep '"'"'^*'"'"' | colrm 1 2)\[\e[m\]\n\[\e[0m\]\$\[\e[m\] \[\e0'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
