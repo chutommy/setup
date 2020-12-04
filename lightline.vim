@@ -141,9 +141,7 @@ let g:lightline = {
 " Disable the built-in mode indicator since this functionality is provided by lightline
 set noshowmode
 
-" if enabled, use ayu
-if enable_ayu
-    let g:lightline = {
-        \ 'colorscheme' : 'ayu_dark'
-      \ }
-endif
+" set colorscheme
+let g:lightline = {
+    \ 'colorscheme' : 'powerline'
+  \ }
