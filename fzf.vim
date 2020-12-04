@@ -5,7 +5,7 @@ nnoremap <leader>o :Files<cr>
 nnoremap <leader>i :BLines<cr>
 nnoremap <leader>h :History:<cr>
 let g:fzf_layout = { 'down': '~33%' }
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.5 } }
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.7 } }
 let g:fzf_preview_window = 'right:60%'
 let g:fzf_buffers_jump = 0
 
