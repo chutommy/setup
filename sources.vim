@@ -1,8 +1,5 @@
 " === Source files ===
 
-" settings
-source $HOME/.config/nvim/settings.vim
-
 " Include plugins
 source $HOME/.config/nvim/plugins.vim
 
