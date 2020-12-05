@@ -84,10 +84,6 @@ set list
 set number
 set relativenumber
 
-" highlight cursor's row and column
-set cursorline
-set cursorcolumn
-
 " commands config
 set showcmd
 set showmatch
@@ -106,4 +102,3 @@ set sidescrolloff=4
 
 " coloring
 set termguicolors
-colorscheme evening
