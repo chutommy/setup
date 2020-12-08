@@ -51,7 +51,7 @@ let g:go_mod_fmt_autosave = 1
 let $GOPATH = $GOPATH
 let g:go_term_enabled = 1
 let g:go_list_type = "quickfix"
-let g:go_test_timeout = '10s'
+let g:go_test_timeout = 's'
 let g:go_fmt_fail_silently = 1
 let g:go_textobj_include_function_doc = 1
 
