@@ -1,4 +1,8 @@
-# .bashrc
+# Bashrc configuration
+#
+# maintainer: Tommy Chu
+# github: chutified
+# email: tommychu2256@gmail.com
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
