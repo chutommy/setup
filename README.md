@@ -1,6 +1,6 @@
 # NeoVim
 
-These are my Neovim files. Feel free to download and modify them.
+My NeoVim source files. Please feel free to edit or make any changes you like.
 
 ## Installation
 
