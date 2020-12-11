@@ -19,6 +19,7 @@ Plug 'airblade/vim-gitgutter'
 
 Plug 'preservim/nerdcommenter'
 Plug 'machakann/vim-highlightedyank'
+Plug 'psliwka/vim-smoothie'
 
 Plug 'fatih/vim-go'
 Plug 'sebdah/vim-delve'
