@@ -13,6 +13,24 @@ echo "==========================="
 echo "Linux sofware setup"
 echo "==========================="
 
+# GIT
+echo "==> Installing git..."
+sudo dnf install git --assumeyes --nodocs
+
+# GIT CONFIGURATION
+echo '###Congigure Git..'
+# promt username
+echo "Enter the Global Username for Git:";
+read GITUSER;
+git config --global user.name "${GITUSER}"
+# promt email
+echo "Enter the Global Email for Git:";
+read GITEMAIL;
+git config --global user.email "${GITEMAIL}"
+# success message
+echo 'Git has been configured!'
+git config --list
+
 # RPM FUSION
 yes | sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 yes | sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -32,24 +50,6 @@ sudo systemctl enable tlp
 # SET BASHRC
 sudo cp bashr ~/.bashrc
 sudo cp bashr /root/.bashrc
-
-# GIT
-echo "==> Installing git..."
-sudo dnf install git --assumeyes --nodocs
-
-# GIT CONFIGURATION
-echo '###Congigure Git..'
-# promt username
-echo "Enter the Global Username for Git:";
-read GITUSER;
-git config --global user.name "${GITUSER}"
-# promt email
-echo "Enter the Global Email for Git:";
-read GITEMAIL;
-git config --global user.email "${GITEMAIL}"
-# success message
-echo 'Git has been configured!'
-git config --list
 
 # PROGRAMMING LANGUAGES/UTILITIES
 # python
