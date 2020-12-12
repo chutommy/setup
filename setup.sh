@@ -22,7 +22,7 @@ sudo cp bashr /root/.bashrc
 
 # GIT
 
-echo "=> Installing git..."
+echo "==> Installing git..."
 sudo dnf install git --assumeyes --nodocs
 
 # GIT CONFIGURATION
@@ -40,57 +40,74 @@ echo 'Git has been configured!'
 git config --list
 
 # PROGRAMMING LANGUAGES
-echo "=> installing python..."
+echo ""
+echo "==> installing python..."
 sudo dnf install python --assumeyes --nodocs
 sudo dnf install python3 --assumeyes --nodocs
 
-echo "=> installing nodejs..."
+echo ""
+echo "==> installing nodejs..."
 sudo dnf install nodejs --assumeyes --nodocs
 
-echo "=> installing golang..."
+echo ""
+echo "==> installing golang..."
 sudo dnf install golang --assumeyes --nodocs
 mkdir ~/go
 mkdir ~/go/src ~/go/bin ~/go/pkg
 
 # DB
-echo "=> installing postgres..."
+echo ""
+echo "==> installing postgres..."
 sudo dnf install postgresql --assumeyes --nodocs
 
 # NEOVIM
-echo "=> installing neovim..."
+echo ""
+echo "==> installing neovim..."
 sudo dnf install neovim --assumeyes --nodocs
 
-echo "=> installing htop..."
+echo ""
+echo "==> installing htop..."
 sudo dnf install htop --assumeyes --nodocs
 
-echo "=> installing fzf..."
+echo ""
+echo "==> installing fzf..."
 sudo dnf install fzf --assumeyes --nodocs
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
-echo "=> installing ctags..."
+echo ""
+echo "==> installing ctags..."
 sudo dnf install ctags --assumeyes --nodocs
 
 # UI
-echo "=> installing gnome-tweaks..."
+echo ""
+echo "==> installing gnome-tweaks..."
 sudo dnf install gnome-tweaks --assumeyes --nodocs
 
 # IMAGES
-echo "=> installing gimp..."
+echo ""
+echo "==> installing gimp..."
 sudo dnf install gimp --assumeyes --nodocs
 
-echo "=> installing inkscape..."
+echo ""
+echo "==> installing inkscape..."
 sudo dnf install inkscape --assumeyes --nodocs
 
 # MEDIA
-echo "=> installing vlc..."
+echo ""
+echo "==> installing vlc..."
 sudo dnf install vlc --assumeyes --nodocs
 
-echo "=> installing transmission"
+echo ""
+echo "==> installing transmission"
 sudo dnf install transmission --assumeyes --nodocs
 
-echo "=> installing google-chrome..."
+echo ""
+echo "==> installing google-chrome..."
 sudo dnf install google-chrome --assumeyes --nodocs
 
-# MANUALLY
-echo "### Manually install docker, dropbox, nerd-firacode"
+# TODO
+echo ""
+echo "=== TODO ==="
+echo "==> Manually install Docker, Dropbox, NERD-FiraCode, Dash-to-dock"
+echo "==> Configure NeoVim, Postgres, Dash-to-dock, Dropbox, Chrome, GNOME-Tweak"
