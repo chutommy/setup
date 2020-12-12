@@ -82,6 +82,7 @@ fi
 # User specific aliases and functions
 
 alias vim='nvim'
+export EDITOR="/usr/bin/nvim"
 
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/go
