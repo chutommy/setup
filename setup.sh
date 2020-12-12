@@ -60,21 +60,6 @@ echo ""
 echo "==> installing postgres..."
 sudo dnf install postgresql --assumeyes --nodocs
 
-# NEOVIM
-echo ""
-echo "==> installing neovim..."
-sudo dnf install neovim --assumeyes --nodocs
-
-echo ""
-echo "==> installing htop..."
-sudo dnf install htop --assumeyes --nodocs
-
-echo ""
-echo "==> installing fzf..."
-sudo dnf install fzf --assumeyes --nodocs
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-
 echo ""
 echo "==> installing ctags..."
 sudo dnf install ctags --assumeyes --nodocs
@@ -105,6 +90,21 @@ sudo dnf install transmission --assumeyes --nodocs
 echo ""
 echo "==> installing google-chrome..."
 sudo dnf install google-chrome --assumeyes --nodocs
+
+# NEOVIM
+echo ""
+echo "==> installing neovim..."
+sudo dnf install neovim --assumeyes --nodocs
+
+echo ""
+echo "==> installing htop..."
+sudo dnf install htop --assumeyes --nodocs
+
+echo ""
+echo "==> installing fzf..."
+sudo dnf install fzf --assumeyes --nodocs
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 # TODO
 echo ""
