@@ -14,19 +14,19 @@ echo "Linux sofware setup"
 echo "==========================="
 
 # RPM FUSION
-sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+yes | sudo rpm -Uvh http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 # DELTARPM AND MIRROR PLUGINS
-sudo echo "fastestmirror=true" >> /etc/dnf/dnf.conf
-sudo echo "deltarpm=true" >> /etc/dnf/dnf.conf
+sudo sh -c 'echo "fastestmirror=true" >> /etc/dnf/dnf.conf'
+sudo sh -c 'echo "deltarpm=true" >> /etc/dnf/dnf.conf'
 
 # UPDATE
 echo "=== Updating installed packages... ==="
 sudo dnf update --assumeyes --nodocs
 
 # BATTERY USAGE
-sudo dnf install tlp tlp-rdw
+sudo dnf install tlp tlp-rdw --assumeyes --nodocs
 sudo systemctl enable tlp
 
 # SET BASHRC
@@ -105,7 +105,7 @@ echo ""
 echo "==> installing google-chrome..."
 sudo dnf install google-chrome --assumeyes --nodocs
 # dropbox
-sudo dnf install dropbox nautilus-dropbox
+sudo dnf install dropbox nautilus-dropbox --assumeyes --nodocs
 
 # NEOVIM
 echo ""
@@ -123,7 +123,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
 # CLEAN UP
-sudo dnf autoremove
+sudo dnf autoremove --assumeyes
 
 # TODO
 echo ""
