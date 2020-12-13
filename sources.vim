@@ -8,6 +8,7 @@ source $HOME/.config/nvim/general.vim
 source $HOME/.config/nvim/display.vim
 source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/mappings.vim
+source $HOME/.config/nvim/vim-hardmode.vim
 
 source $HOME/.config/nvim/lightline.vim
 source $HOME/.config/nvim/coc.vim
