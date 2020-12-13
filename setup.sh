@@ -141,5 +141,5 @@ sudo dnf autoremove --assumeyes
 echo "=== TODO ==="
 echo "==> LOGIN:    Google Chrome, Dropbox"
 echo "==> UPDATE:   NeoVim"
-echo "==> Configure Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal"
+echo "==> Configure Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal, GithubSSH"
 echo "==> visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users"
