@@ -1,9 +1,13 @@
 "=== NERDTree ===
 
 function! OpenAnimatedNERDTree() abort
-    NERDTreeToggle
-    vertical resize 1
-    call animate#window_delta_width(33)
+    if g:NERDTree.IsOpen()
+        NERDTreeToggle
+    else
+        NERDTreeToggle
+        vertical resize 1
+        call animate#window_delta_width(33)
+    endif
 endfunction
 nnoremap <leader>k :call OpenAnimatedNERDTree()<enter>
 
