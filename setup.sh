@@ -93,13 +93,16 @@ sudo dnf install htop --assumeyes --nodocs
 # fuzzy finder
 sudo dnf install fzf --assumeyes --nodocs
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
+~/.fzf/install --all
 # neovim language support
 sudo npm install -g neovim
 pip3 install pynvim
 
+# FIRACODE
+dnf install fira-code-fonts --assumeyes
+
 # DOCKER
-sudo dnf remove --asumeyes docker \
+sudo dnf remove --assumeyes docker \
                   docker-client \
                   docker-client-latest \
                   docker-common \
@@ -113,17 +116,21 @@ sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager \
     --add-repo \
     https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io --asumeyes
+sudo dnf install docker-ce docker-ce-cli containerd.io --assumeyes
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo docker run hello-world
 sudo groupadd docker
 sudo usermod -aG docker $USER
 
+# DASH TO DOCKER
+sudo dnf install gnome-shell-extension-dash-to-dock --assumeyes
+
 # CLEAN UP
 sudo dnf autoremove --assumeyes
 
 # TODO
 echo "=== TODO ==="
-echo "==> Manually install NERD-FiraCode, Dash-to-dock"
-echo "==> Configure NeoVim, Postgres, Dash-to-dock, Dropbox, Chrome, GNOME-Tweak, Settings, Terminal"
+echo "==> LOGIN:    Google Chrome, Dropbox"
+echo "==> UPDATE:   NeoVim"
+echo "==> Configure Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal"
