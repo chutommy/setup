@@ -126,6 +126,14 @@ sudo usermod -aG docker $USER
 # DASH TO DOCKER
 sudo dnf install gnome-shell-extension-dash-to-dock --assumeyes
 
+# POSTGRES
+sudo dnf install postgresql-server postgresql-contrib --assumeyes
+sudo systemctl enable postgresql
+sudo postgresql-setup --initdb --unit postgresql
+sudo systemctl start postgresql
+sudo --user=postgres createuser --createdb --createrole -P $USER
+sudo --user=postgres createdb --owner=$USER $USER
+
 # CLEAN UP
 sudo dnf autoremove --assumeyes
 
@@ -134,3 +142,4 @@ echo "=== TODO ==="
 echo "==> LOGIN:    Google Chrome, Dropbox"
 echo "==> UPDATE:   NeoVim"
 echo "==> Configure Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal"
+echo "==> visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users"
