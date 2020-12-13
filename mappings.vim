@@ -15,8 +15,14 @@ nnoremap <C-m> :cprevious<CR>
 " terminal
 nnoremap tts :new term://bash<CR>i
 nnoremap ttv :vnew term://bash<CR>i
-nnoremap top :split term://htop<CR>
-nnoremap vtop :vsplit term://htop<CR>
+
+" htop
+function! OpenAnimatedHtop() abort
+  new term://htop
+  wincmd J | resize 1
+  call animate#window_percent_height(0.5)
+endfunction
+nnoremap top :call OpenAnimatedHtop()<CR>i
 
 " Copy to clipboard
 vnoremap  <leader>y  "+y

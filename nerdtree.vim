@@ -1,6 +1,11 @@
 "=== NERDTree ===
 
-nnoremap <leader>k :NERDTreeToggle<enter>
+function! OpenAnimatedNERDTree() abort
+    NERDTreeToggle
+    vertical resize 1
+    call animate#window_delta_width(33)
+endfunction
+nnoremap <leader>k :call OpenAnimatedNERDTree()<enter>
 
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
