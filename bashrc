@@ -85,7 +85,7 @@ alias vim='nvim'
 alias :q='exit'
 export EDITOR="/usr/bin/nvim"
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/go
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
