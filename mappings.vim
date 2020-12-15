@@ -13,8 +13,19 @@ nnoremap <C-n> :cnext<CR>
 nnoremap <C-m> :cprevious<CR>
 
 " terminal
-nnoremap tts :new term://bash<CR>i
-nnoremap ttv :vnew term://bash<CR>i
+function! OpenAnimatedTerm() abort
+    new term://bash
+    resize 1
+    call animate#window_percent_height(0.3)
+endfunction
+nnoremap tts :call OpenAnimatedTerm()<CR>i
+
+function! OpenAnimatedVTerm() abort
+    vnew term://bash
+    vertical resize 1
+    call animate#window_delta_width(80)
+endfunction
+nnoremap ttv :call OpenAnimatedVTerm()<CR>i
 
 " htop
 function! OpenAnimatedHtop() abort
