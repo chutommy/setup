@@ -54,16 +54,21 @@ mkdir ~/go
 mkdir ~/go/src ~/go/bin ~/go/pkg
 
 sudo dnf install postgresql --assumeyes --nodocs
-
 sudo dnf install gnome-tweaks --assumeyes --nodocs
 sudo dnf install gimp --assumeyes --nodocs
 sudo dnf install inkscape --assumeyes --nodocs
 sudo dnf install vlc --assumeyes --nodocs
 sudo dnf install transmission --assumeyes --nodocs
-sudo dnf install google-chrome --assumeyes --nodocs
-sudo dnf install dropbox nautilus-dropbox --assumeyes --nodocs
 sudo dnf install fira-code-fonts --assumeyes
 sudo dnf install gnome-shell-extension-dash-to-dock --assumeyes
+
+sudo dnf install dropbox nautilus-dropbox --assumeyes --nodocs
+sudo dropbox autostart y
+sudo dropbox start
+
+sudo dnf install google-chrome --assumeyes --nodocs
+sudo google-chrome
+google-chrome --app=https://accounts.google.com/
 
 # NEOVIM
 sudo dnf install neovim --assumeyes --nodocs
@@ -112,6 +117,5 @@ sudo dnf autoremove --assumeyes
 
 # TODO
 echo "=== TODO ==="
-echo "==> LOGIN:    Google Chrome, Dropbox"
 echo "==> CONFIGURE NeoVim, Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal, GithubSSH"
 echo "==> visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users"
