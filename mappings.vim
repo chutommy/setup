@@ -62,8 +62,8 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 4l
 noremap <S-h> 4h
-noremap <C-j> 15j
-noremap <C-k> 15k
+noremap <C-j> 8j
+noremap <C-k> 8k
 
 " disable sql omni-completion
 let g:omni_sql_no_default_maps = 1
