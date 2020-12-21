@@ -23,5 +23,6 @@ source $HOME/.config/nvim/fugitive.vim
 source $HOME/.config/nvim/git-gutter.vim
 
 source $HOME/.config/nvim/go.vim
+source $HOME/.config/nvim/bracey.vim
 
 source $HOME/.config/nvim/devicons.vim

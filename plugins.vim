@@ -23,5 +23,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'psliwka/vim-smoothie'
 
 Plug 'fatih/vim-go'
+Plug 'turbio/bracey.vim', {'do': 'npm install --prefix server'}
 
 call plug#end()
