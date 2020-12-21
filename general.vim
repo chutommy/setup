@@ -26,7 +26,7 @@ set expandtab
 set autoindent
 set smartindent
 set mouse-=a
-set virtualedit=all
+set virtualedit=block
 
 " search options
 set ignorecase

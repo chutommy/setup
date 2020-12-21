@@ -26,6 +26,7 @@ set expandtab
 set autoindent
 set smartindent
 set mouse-=a
+set virtualedit=block
 
 " search options
 set ignorecase
@@ -52,7 +53,7 @@ nnoremap <C-n> :cnext<CR>
 nnoremap <C-m> :cprevious<CR>
 
 " terminal
-nnoremap tt :terminal
+nnoremap tt :terminal<cr>
 
 " highlight
 nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
@@ -69,6 +70,8 @@ vnoremap <S-Tab> <gv
 " fast moving
 noremap <S-l> 4l
 noremap <S-h> 4h
+noremap <C-j> 8j
+noremap <C-k> 8k
 
 " disable sql omni-completion
 let g:omni_sql_no_default_maps = 1
@@ -102,3 +105,4 @@ set sidescrolloff=4
 
 " coloring
 set termguicolors
+set background=dark
