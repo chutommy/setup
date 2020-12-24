@@ -13,7 +13,6 @@ Plug 'camspiers/animate.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
