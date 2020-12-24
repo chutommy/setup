@@ -75,15 +75,9 @@ google-chrome --app=https://accounts.google.com/
 sudo dnf install neovim -y --nodocs
 sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-<<<<<<< HEAD
 sudo dnf install htop -y --nodocs
 sudo dnf install ctags -y --nodocs
 sudo dnf install fzf -y --nodocs
-=======
-sudo dnf install htop --assumeyes --nodocs
-sudo dnf install ctags --assumeyes --nodocs
-sudo dnf install fzf --assumeyes --nodocs
->>>>>>> 64d45ddfee154f7ad9a29153feef0a60225fc6aa
 sudo npm install -g neovim
 pip3 install pynvim
 
