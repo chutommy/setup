@@ -77,8 +77,6 @@ sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/
 sudo dnf install htop --assumeyes --nodocs
 sudo dnf install ctags --assumeyes --nodocs
 sudo dnf install fzf --assumeyes --nodocs
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install --all
 sudo npm install -g neovim
 pip3 install pynvim
 
