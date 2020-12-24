@@ -9,13 +9,18 @@
 
 # SET
 clear
-echo "==========================="
-echo "Linux sofware setup"
-echo "==========================="
+echo "====================="
+echo "|Linux sofware setup|"
+echo "===================="
+
+echo "WARNING!!!"
+echo "> Run this command as user 'tommychu'"
+echo "Press enter to confirm."
+read;
 
 # SET BASHRC
-sudo cp bashr ~/.bashrc
-sudo cp bashr /root/.bashrc
+sudo cp bashrc ~/.bashrc
+sudo cp bashrc /root/.bashrc
 
 # GIT
 sudo dnf install git -y --nodocs
@@ -67,10 +72,6 @@ sudo dnf install dropbox nautilus-dropbox -y --nodocs
 sudo dropbox autostart y
 sudo dropbox start
 
-sudo dnf install google-chrome -y --nodocs
-sudo google-chrome
-google-chrome --app=https://accounts.google.com/
-
 # NEOVIM
 sudo dnf install neovim -y --nodocs
 sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
@@ -116,5 +117,9 @@ sudo dnf autoremove -y
 
 # TODO
 echo "=== TODO ==="
-echo "==> CONFIGURE NeoVim, Postgres, Dash-to-dock, GNOME-Tweak, Settings, Terminal, GithubSSH"
-echo "==> visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users"
+echo "==> INSTALL Google Chrome"
+echo "==> CONFIGURE"
+echo "====> 1. GithubSSH key, Terminal"
+echo "====> 2. Settings, GNOME Tweak (Dash-to-dock)"
+echo "====> 3. Postgres (visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users)"
+echo "====> 4. Neovim"
