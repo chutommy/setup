@@ -6,7 +6,7 @@ filetype plugin indent on
 " disable backup
 set noswapfile
 set noerrorbells
-set nobackup
+set backup
 
 " chars
 set encoding=utf-8
@@ -38,23 +38,6 @@ set lazyredraw
 set history=666
 set formatoptions+=j
 
-" === Keymaps ===
-
-let mapleader=","
-
-" tab
-nnoremap <leader>tt :tabnew<CR>
-nnoremap <leader>tc :tabclose<CR>
-nnoremap <leader>tn :tabnext<CR>
-nnoremap <leader>tp :tabprevious<CR>
-
-" errs
-nnoremap <C-n> :cnext<CR>
-nnoremap <C-m> :cprevious<CR>
-
-" terminal
-nnoremap tt :terminal<cr>
-
 " highlight
 nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
 function! ClearSearch()
@@ -73,19 +56,23 @@ noremap <S-h> 4h
 noremap <C-j> 8j
 noremap <C-k> 8k
 
-" disable sql omni-completion
-let g:omni_sql_no_default_maps = 1
-
-" === Display===
+" === Display ===
 
 set t_Co=256
 " show invisible chars
 set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
 
+" semi-transparent popupmenu
+set pumblend=25
+
 " show numers
 set list
 set number
 set relativenumber
+
+" highlight cursor's row and column
+set cursorline
+set cursorcolumn
 
 " commands config
 set showcmd
@@ -106,3 +93,23 @@ set sidescrolloff=4
 " coloring
 set termguicolors
 set background=dark
+
+" gruvbox
+" git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
+let g:gruvbox_bold = 1
+let g:gruvbox_italic = 1
+let g:gruvbox_underline = 1
+let g:gruvbox_undercurl = 1
+let g:gruvbox_termcolors = 256
+let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_contrast_light = 'hard'
+let g:gruvbox_hls_cursor = 'orange'
+let g:gruvbox_italicize_comments = 1
+let g:gruvbox_italicize_strings = 0
+let g:gruvbox_invert_selection = 1
+let g:gruvbox_invert_signs = 1
+let g:gruvbox_invert_indent_guides = 0
+let g:gruvbox_invert_tabline = 0
+
+" set colorscheme
+autocmd vimenter * ++nested colorscheme gruvbox

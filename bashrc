@@ -27,9 +27,6 @@ fi
 export PATH
 
 # append to the history file, don't overwrite it
-shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=5000
 HISTFILESIZE=10000
 
@@ -81,7 +78,7 @@ fi
 
 # User specific aliases and functions
 
-alias vim='nvim'
+#alias vim='nvim'
 alias :q='exit'
 export EDITOR="/usr/bin/nvim"
 
