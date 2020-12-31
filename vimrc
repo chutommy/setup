@@ -23,7 +23,8 @@ filetype plugin indent on
 " disable backup
 set noswapfile
 set noerrorbells
-set backup
+set nobackup
+set nowritebackup
 
 " chars
 set encoding=utf-8
