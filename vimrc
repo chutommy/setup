@@ -1,3 +1,20 @@
+" === Plugins ===
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'morhetz/gruvbox'
+Plug 'itchyny/lightline.vim'
+Plug 'preservim/nerdcommenter'
+Plug 'machakann/vim-highlightedyank'
+
+call plug#end()
+
 " === General ===
 
 syntax on
@@ -62,9 +79,6 @@ set t_Co=256
 " show invisible chars
 set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
 
-" semi-transparent popupmenu
-set pumblend=25
-
 " show numers
 set list
 set number
@@ -95,7 +109,6 @@ set termguicolors
 set background=dark
 
 " gruvbox
-" git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
 let g:gruvbox_bold = 1
 let g:gruvbox_italic = 1
 let g:gruvbox_underline = 1
@@ -110,6 +123,4 @@ let g:gruvbox_invert_selection = 1
 let g:gruvbox_invert_signs = 1
 let g:gruvbox_invert_indent_guides = 0
 let g:gruvbox_invert_tabline = 0
-
-" set colorscheme
-autocmd vimenter * ++nested colorscheme gruvbox
+colorscheme gruvbox
