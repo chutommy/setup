@@ -1,5 +1,5 @@
 # Bashrc configuration
-#
+
 # maintainer: Tommy Chu
 # github: chutified
 # email: tommychu2256@gmail.com
@@ -36,7 +36,6 @@ shopt -s checkwinsize
 
 # set colors
 color_prompt=yes
-#PS1='\[\e[0;91m\]┌──[\[\e[0;2;97m\]$?\[\e[0;91m\]]\[\e[0;91m\]─\[\e[0;91m\][\[\e[0;1;38;5;226m\]\u\[\e[0;97m\]@\[\e[0;38;5;51m\]\H\[\e[0;1;93m\]:\[\e[0;97m\]\w\[\e[0;91m\]]\[\e[m\] \[\e[0;2;37m\](\[\e[0;2;37m\]$(ip route get 1.1.1.1 | awk -F"src " '"'"'NR==1{split($2,a," ");print a[1]}'"'"')\[\e[0;2;37m\])\[\e0\n\[\e[0;91m\]└─╼\[\e[m\] \[\e[0;1;91m\]\$\[\e[0;2;37m\]/\[\e[0;2;37m\]>\[\e[m\] \[\e0'
 PS1='\[\e[0m\][\[\e[0;1;91m\]\u\[\e[0m\]@\[\e[0;94m\]\h\[\e[m\] \[\e[0m\]\W\[\e[0m\]]\[\e[0m\]\$\[\e[m\] \[\e0'
 
 # enable color support of ls, less and man, and also add handy aliases
