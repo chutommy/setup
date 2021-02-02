@@ -84,6 +84,6 @@ export EDITOR="/usr/bin/nvim"
 export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/go
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
-export FZF_DEFAULT_COMMAND='find .'
+export PATH=$PATH:$HOME/GoLand/bin
+
+alias goland='goland.sh'

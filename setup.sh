@@ -58,22 +58,18 @@ sudo dnf install golang -y --nodocs
 mkdir ~/go
 mkdir ~/go/src ~/go/bin ~/go/pkg
 
-sudo dnf install postgresql -y --nodocs
 sudo dnf install gnome-tweaks -y --nodocs
 sudo dnf install gimp -y --nodocs
 sudo dnf install inkscape -y --nodocs
 sudo dnf install vlc -y --nodocs
-sudo dnf install transmission -y --nodocs
-sudo dnf install fira-code-fonts -y
 sudo dnf install gnome-shell-extension-dash-to-dock -y
-sudo dnf install sequeler -y
 
 sudo dnf install dropbox nautilus-dropbox -y --nodocs
 sudo dropbox autostart y
 sudo dropbox start
 
 # NEOVIM
-#sudo dnf install neovim -y --nodocs
+sudo dnf install neovim -y --nodocs
 #sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
 #       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 #sudo dnf install htop -y --nodocs
@@ -104,14 +100,6 @@ sudo docker run hello-world
 sudo groupadd docker
 sudo usermod -aG docker "$USER"
 
-# POSTGRES
-sudo dnf install postgresql-server postgresql-contrib -y
-sudo systemctl enable postgresql
-sudo postgresql-setup --initdb --unit postgresql
-sudo systemctl start postgresql
-sudo --user=postgres createuser --createdb --createrole -P "$USER"
-sudo --user=postgres createdb --owner="$USER" "$USER"
-
 # CLEAN UP
 sudo dnf autoremove -y
 
@@ -120,5 +108,4 @@ echo "==> INSTALL Google Chrome"
 echo "==> CONFIGURE"
 echo "====> 1. GithubSSH key, Terminal"
 echo "====> 2. Settings, GNOME Tweak (Dash-to-dock)"
-echo "====> 3. Postgres (visit https://fedoraproject.org/wiki/PostgreSQL#User_Creation_and_Database_Creation to set Postgres users)"
-#echo "====> 4. Neovim"
+echo "====> 2. Goland"
