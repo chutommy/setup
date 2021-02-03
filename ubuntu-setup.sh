@@ -51,7 +51,12 @@ sudo apt update
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
+sudo apt install curl
 sudo apt install vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 sudo apt install gnome-tweak-tool
 sudo apt install inkscape
 sudo snap install gimp
