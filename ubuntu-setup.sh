@@ -23,21 +23,21 @@ sudo cp vimrc ~/.vimrc
 sudo cp vimrc /root/.vimrc
 
 # GIT
-sudo apt install git-all
+sudo apt -y install git-all
 git config --global user.name "chutified"
 git config --global user.email "tommychu2256@gmail.com"
 
 # PERFORMANCE
-sudo apt install preload
+sudo apt -y install preload
 
 # BATTERY
-sudo apt install tlp tlp-rdw
+sudo apt -y install tlp tlp-rdw
 sudo tlp start
-sudo apt install tp-smapi-dkms acpi-call-dkms
+sudo apt -y install tp-smapi-dkms acpi-call-dkms
 
 # LANGUAGES
-sudo apt install nodejs
-sudo apt install npm
+sudo apt -y install nodejs
+sudo apt -y install npm
 sudo snap install go --classic
 mkdir ~/go
 mkdir ~/go/src ~/go/bin ~/go/pkg
@@ -49,25 +49,27 @@ sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo apt update
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb
+sudo apt -y install ./google-chrome-stable_current_amd64.deb
 
-sudo apt install curl
-sudo apt install vim
+sudo apt -y install curl
+sudo apt -y install vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 
-sudo apt install gnome-tweak-tool
-sudo apt install inkscape
+sudo apt -y install gnome-tweak-tool
+sudo apt -y install inkscape
+sudo apt -y install flameshot
 sudo snap install gimp
 sudo snap install vlc
 sudo snap install goland --classic
 sudo snap install postman
 sudo snap install teams
+sudo snap install htop
 
 # DOCKER
 sudo apt-get remove docker docker-engine docker.io containerd runc
-sudo apt-get install \
+sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
@@ -80,7 +82,7 @@ sudo add-apt-repository \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo docker run hello-world
 sudo groupadd docker
 sudo usermod -aG docker $USER
