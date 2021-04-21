@@ -96,3 +96,13 @@ echo "=== TODO ==="
 echo "1. Install/config Chrome, Dropbox, Terminal, Dash To Dock"
 echo "2. Config Software and updates, Wireless DNS, MS Teams, Goland, Postman, Git SSH"
 echo "3. Settings, GNOME Tweaks"
+
+echo """
+  Keyboard Shortcuts
+  ------------------
+  Open Google Chrome [google-chrome] (Super+A)
+  Open File manager [nautilus] (Super+Q)
+  Open Goland [goland] (Super+W)
+  Take Flameshot [flameshot gui] (Super+Z)
+  Play LoFi [gnome-terminal -x sh -c \"mpg123 -v -l 0 -g 5 -K ~/Dropbox/Music/codefi.mp3; bash\"] (Super+F)
+"""

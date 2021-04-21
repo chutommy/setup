@@ -102,10 +102,3 @@ sudo usermod -aG docker "$USER"
 
 # CLEAN UP
 sudo dnf autoremove -y
-
-echo "=== TODO ==="
-echo "==> INSTALL Google Chrome"
-echo "==> CONFIGURE"
-echo "====> 1. GithubSSH key, Terminal"
-echo "====> 2. Settings, GNOME Tweak (Dash-to-dock)"
-echo "====> 2. Goland"
