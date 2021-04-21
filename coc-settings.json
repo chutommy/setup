@@ -1,11 +1,11 @@
 {
-    "tsserver.enable": true,
-    "tsserver.formatOnType": true,
-    "tsserver.disableAutomaticTypeAcquisition": false,
-    "prettier.endOfLine": "auto",
-    "prettier.trailingComma": "all",
-    "prettier.bracketSpacing": true,
-    "prettier.useTabs": false,
+  "tsserver.enable": true,
+  "tsserver.formatOnType": true,
+  "tsserver.disableAutomaticTypeAcquisition": false,
+  "prettier.endOfLine": "auto",
+  "prettier.trailingComma": "all",
+  "prettier.bracketSpacing": true,
+  "prettier.useTabs": false,
   "json.enable": true,
   "json.trace.server": "verbose",
   "json.format.enable": true,
@@ -50,7 +50,10 @@
   "sql.database": "postgresql",
   "docker.enable": true,
   "html.enable": true,
-  "html.filetypes": ["html", "gohtml"],
+  "html.filetypes": [
+    "html",
+    "gohtml"
+  ],
   "html.autoClosingTags": true,
   "html.format.enable": true,
   "html.validate.html": true,
@@ -82,5 +85,5 @@
   "highlight.document.enable": true,
   "highlight.colorNames.enable": true,
   "pairs.enableCharacters": ["(", "[", "{", "<", "'", "\"", "`"],
-      "pairs.enableBackspace": true
+  "pairs.enableBackspace": true
 }

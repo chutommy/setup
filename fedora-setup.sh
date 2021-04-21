@@ -16,7 +16,7 @@ echo "===================="
 echo "WARNING!!!"
 echo "> Run this command as user 'tommychu'"
 echo "Press enter to confirm."
-read -r;
+read -r
 
 # SET BASHRC
 sudo cp bashrc ~/.bashrc
@@ -25,11 +25,11 @@ sudo cp bashrc /root/.bashrc
 # GIT
 sudo dnf install git -y --nodocs
 echo '###Congigure Git..'
-echo "Enter the Global Username for Git:";
-read -r GITUSER;
+echo "Enter the Global Username for Git:"
+read -r GITUSER
 git config --global user.name "${GITUSER}"
-echo "Enter the Global Email for Git:";
-read -r GITEMAIL;
+echo "Enter the Global Email for Git:"
+read -r GITEMAIL
 git config --global user.email "${GITEMAIL}"
 echo 'Git has been configured!'
 git config --list
@@ -80,19 +80,19 @@ sudo dnf install neovim -y --nodocs
 
 # DOCKER
 sudo dnf remove -y docker \
-                  docker-client \
-                  docker-client-latest \
-                  docker-common \
-                  docker-latest \
-                  docker-latest-logrotate \
-                  docker-logrotate \
-                  docker-selinux \
-                  docker-engine-selinux \
-                  docker-engine
+  docker-client \
+  docker-client-latest \
+  docker-common \
+  docker-latest \
+  docker-latest-logrotate \
+  docker-logrotate \
+  docker-selinux \
+  docker-engine-selinux \
+  docker-engine
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager \
-    --add-repo \
-    https://download.docker.com/linux/fedora/docker-ce.repo
+  --add-repo \
+  https://download.docker.com/linux/fedora/docker-ce.repo
 sudo dnf install docker-ce docker-ce-cli containerd.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
@@ -102,10 +102,3 @@ sudo usermod -aG docker "$USER"
 
 # CLEAN UP
 sudo dnf autoremove -y
-
-echo "=== TODO ==="
-echo "==> INSTALL Google Chrome"
-echo "==> CONFIGURE"
-echo "====> 1. GithubSSH key, Terminal"
-echo "====> 2. Settings, GNOME Tweak (Dash-to-dock)"
-echo "====> 2. Goland"

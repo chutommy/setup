@@ -81,9 +81,9 @@ fi
 alias :q='exit'
 export EDITOR="/usr/bin/nvim"
 
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 export GOPATH=$HOME/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin:$GOBIN
 
 export PATH=$PATH:$HOME/GoLand/bin
-
 alias goland='goland.sh'
