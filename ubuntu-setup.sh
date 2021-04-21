@@ -54,8 +54,7 @@ sudo apt -y install ./google-chrome-stable_current_amd64.deb
 sudo apt -y install curl
 sudo apt -y install vim
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 sudo apt -y install gnome-tweak-tool
 sudo apt -y install inkscape
@@ -70,15 +69,15 @@ sudo snap install htop
 # DOCKER
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get -y install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+  apt-transport-https \
+  ca-certificates \
+  curl \
+  gnupg-agent \
+  software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo apt-key fingerprint 0EBFCD88
 sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+  "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
 sudo apt-get update

@@ -6,14 +6,14 @@ My NeoVim source files. Please feel free to edit or make any changes you like.
 
 ### Requirements
 
-- [Neovim](https://neovim.io)
-- [Go](https://golang.org)
-- [Python3](https://www.python.org)
-- [Node](https://nodejs.org/en)
 - [Git](https://git-scm.com)
+- [Neovim](https://neovim.io)
 - [Vim-plug](https://github.com/junegunn/vim-plug)
 - [Fzf](https://github.com/junegunn/fzf)
 - [ctags](http://ctags.sourceforge.net)
+- [Go](https://golang.org)
+- [Python3](https://www.python.org)
+- [Node](https://nodejs.org/en)
 
 ### Update commands
 
