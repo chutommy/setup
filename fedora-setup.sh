@@ -4,7 +4,7 @@
 # Install all apps in one script on a new system (Fedora)
 #
 # MAINTAINER:   Tommy Chu
-# GITHUB:       chutified
+# GITHUB:       chutommy
 # EMAIL:        tommychu2256@gmail.com
 
 # SET

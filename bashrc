@@ -1,7 +1,7 @@
 # Bashrc configuration
 
 # maintainer: Tommy Chu
-# github: chutified
+# github: chutommy
 # email: tommychu2256@gmail.com
 
 # ~/.bashrc: executed by bash(1) for non-login shells.

@@ -3,7 +3,7 @@
 # === SETUP ==
 
 # MAINTAINER:   Tommy Chu
-# GITHUB:       chutified
+# GITHUB:       chutommy
 # EMAIL:        tommychu2256@gmail.com
 
 # SET
@@ -24,7 +24,7 @@ sudo cp vimrc /root/.vimrc
 
 # GIT
 sudo apt -y install git-all
-git config --global user.name "chutified"
+git config --global user.name "chutommy"
 git config --global user.email "tommychu2256@gmail.com"
 
 # PERFORMANCE
