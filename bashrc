@@ -77,13 +77,12 @@ fi
 
 # User specific aliases and functions
 
-#alias vim='nvim'
-alias :q='exit'
+# nvim
+alias vi='nvim'
+alias vim='nvim'
 export EDITOR="/usr/bin/nvim"
 
+# go
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin:$GOBIN
-
-export PATH=$PATH:$HOME/GoLand/bin
-alias goland='goland.sh'
