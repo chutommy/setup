@@ -1,4 +1,4 @@
-" === Bracey ====
+" === Bracey ===
 
 nnoremap <leader>bs :Bracey<cr>
 nnoremap <leader>bt :BraceyStop<cr>

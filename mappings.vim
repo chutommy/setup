@@ -66,4 +66,4 @@ noremap <C-j> 8j
 noremap <C-k> 8k
 
 " disable sql omni-completion
-" let g:omni_sql_no_default_maps = 1
+let g:omni_sql_no_default_maps = 1
