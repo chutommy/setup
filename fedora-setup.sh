@@ -70,13 +70,13 @@ sudo dropbox start
 
 # NEOVIM
 sudo dnf install neovim -y --nodocs
-#sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-#       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-#sudo dnf install htop -y --nodocs
-#sudo dnf install ctags -y --nodocs
-#sudo dnf install fzf -y --nodocs
-#sudo npm install -g neovim
-#pip3 install pynvim
+sudo sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+sudo dnf install htop -y --nodocs
+sudo dnf install ctags -y --nodocs
+sudo dnf install fzf -y --nodocs
+sudo npm install -g neovim
+pip3 install pynvim
 
 # DOCKER
 sudo dnf remove -y docker \
