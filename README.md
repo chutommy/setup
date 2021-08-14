@@ -1,10 +1,10 @@
 # NeoVim
 
-My NeoVim source files. Please feel free to download, edit or make any
-changes you like.
+My NeoVim source files. Please feel free to download, edit or make any changes
+you like.
 
-The repo also contains a bashrc configuration file, and a custom setup script
-for some major Linux distributions.
+The repo also contains a bash and zsh configuration files, and a my custom
+personal setup script for some major Linux distributions.
 
 ### Requirements
 
@@ -17,7 +17,7 @@ for some major Linux distributions.
 - [Python3](https://www.python.org)
 - [Node](https://nodejs.org/en)
 
-### Update commands
+### NeoVim update commands
 
 - `:PlugUpgrade`
 - `:PlugInstall`/`:PlugUpdate`
@@ -25,3 +25,7 @@ for some major Linux distributions.
 - `:CocUpdate`
 - `:UpdateRemotePlugins`
 - `:checkhealth`
+
+### Screenshot
+
+![screenshot](https://github.com/chutommy/myvim/blob/master/screenshots/full.png?raw=true)
