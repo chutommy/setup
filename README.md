@@ -3,7 +3,7 @@
 My NeoVim source files. Please feel free to download, edit or make any changes
 you like.
 
-The repo also contains a bash and zsh configuration files, and a my custom
+The repo also contains a bash and zsh configuration files, and my custom
 personal setup script for some major Linux distributions.
 
 ### Requirements
