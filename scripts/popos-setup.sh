@@ -37,6 +37,7 @@ sudo systemctl enable containerd.service
 
 # apps
 sudo apt -y install neovim
+sudo apt -y install trash-cli
 sudo apt -y install golang-go
 sudo apt -y install inkscape
 sudo apt -y install gimp
