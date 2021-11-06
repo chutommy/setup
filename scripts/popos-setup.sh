@@ -49,4 +49,5 @@ echo """
   Google Chrome (login)
   Goland (login)
   Postman (login)
+  Oh my ZSH
 """
