@@ -41,6 +41,10 @@ sudo apt -y install golang-go
 sudo apt -y install inkscape
 sudo apt -y install gimp
 
+# zsh
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 sudo apt autoremove
 
 echo """
