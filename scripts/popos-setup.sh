@@ -6,6 +6,11 @@
 # GITHUB:       chutommy
 # EMAIL:        tommychu2256@gmail.com
 
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 sudo apt update && sudo apt -y upgrade
 
 # git
