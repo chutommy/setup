@@ -54,9 +54,11 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 sudo apt-get autoremove
 
 echo """
-  Install apps:
+  Manually:
   =============
-  Google Chrome (login)
-  Goland (login)
-  Postman (login)
+  Google Chrome login
+  Jetbrains Toolbox login
+  Postman login
+  Backups setup
+  ZSH RC load
 """
