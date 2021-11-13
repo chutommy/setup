@@ -1,4 +1,6 @@
-# NeoVim
+# My Personal Setup scripts and Docs
+
+## NeoVim
 
 My NeoVim source files. Please feel free to download, edit or make any changes
 you like.
