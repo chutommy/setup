@@ -1,30 +1,14 @@
-" === Plugins ===
+" VIMRC
+" Maintainer: Tommy Chu
+" GitHub: chutommy
+" Email: tommychu2256@gmail.com
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'itchyny/lightline.vim'
-Plug 'preservim/nerdcommenter'
-Plug 'machakann/vim-highlightedyank'
-
-call plug#end()
-
-" === General ===
-
+" syntax
 syntax on
 filetype plugin indent on
 
-" disable backup
-set noswapfile
+" error bell
 set noerrorbells
-set nobackup
-set nowritebackup
 
 " chars
 set encoding=utf-8
@@ -35,8 +19,11 @@ set autoread
 set backspace=indent,eol,start
 set clipboard=unnamed
 
+" split
 set splitright
 set splitbelow
+
+" white symbols
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -46,15 +33,63 @@ set smartindent
 set mouse-=a
 set virtualedit=block
 
-" search options
+" search
 set ignorecase
 set smartcase
 
+" menu
 set wildmenu
 set lazyredraw
 
+" history
 set history=666
 set formatoptions+=j
+
+" invisible chars
+set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
+
+" popup menu
+set pumblend=25
+
+" snumbers
+set list
+set number
+set relativenumber
+
+" cursor
+set cursorline
+set cursorcolumn
+
+" cmd config
+set showcmd
+set showmatch
+set noshowmode
+
+" search highlighting
+set incsearch
+set hlsearch
+
+" movement
+set wrap
+set scrolloff=4
+set sidescrolloff=4
+
+" colors
+set t_Co=256
+set termguicolors
+set background=dark
+
+" clipboard
+" copy
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+" paste
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
 
 " highlight
 nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
@@ -73,55 +108,3 @@ noremap <S-l> 4l
 noremap <S-h> 4h
 noremap <C-j> 8j
 noremap <C-k> 8k
-
-" === Display ===
-
-set t_Co=256
-" show invisible chars
-set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
-
-" show numers
-set list
-set number
-set relativenumber
-
-" highlight cursor's row and column
-set cursorline
-set cursorcolumn
-
-" commands config
-set showcmd
-set showmatch
-set noshowmode
-
-" searching hilighting
-set incsearch
-set hlsearch
-
-" movinga while editting
-set wrap
-set scrolloff=4
-set sidescrolloff=4
-
-" === Colors ===
-
-" coloring
-set termguicolors
-set background=dark
-
-" gruvbox
-let g:gruvbox_bold = 1
-let g:gruvbox_italic = 1
-let g:gruvbox_underline = 1
-let g:gruvbox_undercurl = 1
-let g:gruvbox_termcolors = 256
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_contrast_light = 'hard'
-let g:gruvbox_hls_cursor = 'orange'
-let g:gruvbox_italicize_comments = 1
-let g:gruvbox_italicize_strings = 0
-let g:gruvbox_invert_selection = 1
-let g:gruvbox_invert_signs = 1
-let g:gruvbox_invert_indent_guides = 0
-let g:gruvbox_invert_tabline = 0
-colorscheme gruvbox
