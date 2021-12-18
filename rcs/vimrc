@@ -1,7 +1,8 @@
 " VIMRC
-" Maintainer: Tommy Chu
-" GitHub: chutommy
-" Email: tommychu2256@gmail.com
+
+" maintainer: Tommy Chu
+" github: chutommy
+" email: tommychu2256@gmail.com
 
 " syntax
 syntax on
