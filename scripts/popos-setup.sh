@@ -38,10 +38,10 @@ sudo apt-get -y install tlp tlp-rdw
 sudo tlp start
 
 # languages
-sudo apt-get -y install python3
-sudo apt-get -y install golang
-sudo apt-get -y install nodejs
+sudo snap install go --classic
+sudo snap install node --classic
 sudo apt-get -y install npm
+sudo apt-get -y install python3
 
 # browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -52,9 +52,9 @@ sudo apt-get -y install curl
 sudo apt-get -y install vim
 sudo apt-get -y install neovim
 sudo apt-get -y install trash-cli
-sudo apt-get -y install inkscape
-sudo apt-get -y install gimp
 sudo apt-get -y install snapd
+sudo snap install gimp
+sudo snap install inkscape
 sudo snap install postman
 sudo snap install vlc
 sudo snap install intellij-idea-ultimate --classic
