@@ -59,10 +59,6 @@ sudo snap install postman
 sudo snap install vlc
 sudo snap install deja-dup --classic
 
-# zsh
-sudo apt-get -y install zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # docker
 sudo apt-get install ca-certificates curl gnupg lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -74,6 +70,10 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
+# zsh
+sudo apt-get -y install zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # clean-up
 sudo apt-get -y update
