@@ -35,7 +35,7 @@ sudo systemctl enable fstrim.timer
 # battery
 sudo apt-get -y install tp-smapi-dkms acpi-call-dkms
 sudo apt-get -y install tlp tlp-rdw
-sudo tlp start
+sudo systemctl enable tlp.service
 
 # languages
 sudo snap install go --classic
@@ -57,7 +57,6 @@ sudo snap install gimp
 sudo snap install inkscape
 sudo snap install postman
 sudo snap install vlc
-sudo snap install intellij-idea-ultimate --classic
 sudo snap install deja-dup --classic
 
 # zsh
@@ -70,7 +69,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o 
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
