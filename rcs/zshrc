@@ -45,8 +45,3 @@ alias vim='nvim'
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias rm=trash
-
-# go
-export GOPATH=$HOME/go
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:/usr/local/go/bin:$GOBIN
