@@ -6,7 +6,7 @@
 # EMAIL:        tommychu2256@gmail.com
 
 if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
+  then echo "Please run with sudo"
   exit
 fi
 
@@ -37,22 +37,24 @@ sudo apt-get -y install tp-smapi-dkms acpi-call-dkms
 sudo apt-get -y install tlp tlp-rdw
 sudo systemctl enable tlp.service
 
-# languages
-sudo snap install go --classic
-sudo snap install node --classic
-sudo apt-get -y install npm
-sudo apt-get -y install python3
-
 # browser
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
-# apps
+# languages	
+sudo snap install go --classic	
+sudo snap install node --classic	
+sudo apt-get -y install npm	
+sudo apt-get -y install python3
+
+# cli apps
 sudo apt-get -y install curl
 sudo apt-get -y install vim
 sudo apt-get -y install neovim
 sudo apt-get -y install trash-cli
 sudo apt-get -y install snapd
+
+# gui apps
 sudo snap install gimp
 sudo snap install inkscape
 sudo snap install postman
