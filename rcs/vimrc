@@ -79,33 +79,3 @@ set sidescrolloff=4
 set t_Co=256
 set termguicolors
 set background=dark
-
-" clipboard
-" copy
-vnoremap  <leader>y  "+y
-nnoremap  <leader>Y  "+yg_
-nnoremap  <leader>y  "+y
-nnoremap  <leader>yy  "+yy
-" paste
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>p "+p
-vnoremap <leader>P "+P
-
-" highlight
-nnoremap <C-s> :call ClearSearch()<CR>:nohl<CR>
-function! ClearSearch()
-    let @/=""
-endfunction
-
-" shifting
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-vnoremap <Tab> >gv
-vnoremap <S-Tab> <gv
-
-" fast moving
-noremap <S-l> 4l
-noremap <S-h> 4h
-noremap <C-j> 8j
-noremap <C-k> 8k
