@@ -47,7 +47,7 @@ set history=666
 set formatoptions+=j
 
 " invisible chars
-set listchars=tab:▸\  ,trail:·,nbsp:_
+set listchars=tab:▸\ ,trail:·,nbsp:_
 
 " snumbers
 set list
