@@ -62,7 +62,7 @@ set cursorcolumn
 set ruler
 set showcmd
 set showmatch
-set noshowmode
+set showmode
 
 " search highlighting
 set incsearch
@@ -74,10 +74,10 @@ set scrolloff=4
 set sidescrolloff=4
 
 " colors
+colorscheme desert
 set t_Co=256
 set termguicolors
 set background=dark
-colorscheme desert
 
 " statusline
 set laststatus=2
