@@ -47,10 +47,7 @@ set history=666
 set formatoptions+=j
 
 " invisible chars
-set listchars=tab:\.\ ,trail:·,eol:¬,nbsp:_
-
-" popup menu
-set pumblend=25
+set listchars=tab:▸\  ,trail:·,nbsp:_
 
 " snumbers
 set list
@@ -62,6 +59,7 @@ set cursorline
 set cursorcolumn
 
 " cmd config
+set ruler
 set showcmd
 set showmatch
 set noshowmode
@@ -79,3 +77,11 @@ set sidescrolloff=4
 set t_Co=256
 set termguicolors
 set background=dark
+colorscheme desert
+
+" statusline
+set laststatus=2
+set statusline=
+set statusline=\ %F\ %M\ %Y\ %R
+set statusline+=%=
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
