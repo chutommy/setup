@@ -8,17 +8,32 @@
 syntax on
 filetype plugin indent on
 
+" chars
+set encoding=utf-8
+
+" system menu
+set wildmenu
+
+" disable mouse
+set mouse-=a
+
+" share system clipboard
+set clipboard=unnamedplus
+
 " error bell
 set noerrorbells
 
-" chars
-set encoding=utf-8
+" autocheck
 set autowrite
-set autoread
+"set autoread
+"set lazyredraw
+
+" history
+set history=1000
+"set formatoptions+=j
 
 " backspace behavior
 set backspace=indent,eol,start
-set clipboard=unnamed
 
 " split
 set splitright
@@ -28,53 +43,48 @@ set splitbelow
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set expandtab
 set autoindent
 set smartindent
-set mouse-=a
-set virtualedit=block
-
-" search
-set ignorecase
-set smartcase
-
-" menu
-set wildmenu
-set lazyredraw
-
-" history
-set history=666
-set formatoptions+=j
+set expandtab
 
 " invisible chars
-set listchars=tab:▸\ ,trail:·,nbsp:_
-
-" snumbers
 set list
+set listchars=tab:··>,trail:·,nbsp:_
+
+" movement
+set virtualedit=block
+"set wrap
+set scrolloff=4
+set sidescrolloff=4
+
+" search
+"set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" numbers
 set number
 set relativenumber
 
 " cursor
 set cursorline
+set cursorlineopt=line
 set cursorcolumn
 
-" cmd config
+" meta data
 set ruler
 set showcmd
-set showmatch
 set showmode
 
-" search highlighting
-set incsearch
-set hlsearch
-
-" movement
-set wrap
-set scrolloff=4
-set sidescrolloff=4
+" brackets
+set showmatch
+set matchtime=2
 
 " colors
-colorscheme desert
+"colorscheme morning
+colorscheme evening
+"colorscheme desert
 set t_Co=256
 set termguicolors
 set background=dark
@@ -82,6 +92,6 @@ set background=dark
 " statusline
 set laststatus=2
 set statusline=
-set statusline=\ %F\ %M\ %Y\ %R
+set statusline+=\ %F\ %M\ %Y\ %R\ %W
 set statusline+=%=
 set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
