@@ -14,6 +14,7 @@ set relativenumber
 
 " highlight cursor's row and column
 set cursorline
+set cursorlineopt=line
 set cursorcolumn
 
 " commands config

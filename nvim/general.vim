@@ -35,5 +35,5 @@ set smartcase
 set wildmenu
 set lazyredraw
 
-set history=666
+set history=10000
 set formatoptions+=j
