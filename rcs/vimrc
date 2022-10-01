@@ -83,7 +83,7 @@ set matchtime=2
 
 " colors
 "colorscheme morning
-colorscheme evening
+"colorscheme evening
 "colorscheme desert
 set t_Co=256
 set termguicolors
