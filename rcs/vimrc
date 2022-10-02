@@ -25,12 +25,12 @@ set noerrorbells
 
 " autocheck
 set autowrite
-"set autoread
-"set lazyredraw
+set autoread
+set lazyredraw
 
 " history
 set history=1000
-"set formatoptions+=j
+set formatoptions+=j
 
 " backspace behavior
 set backspace=indent,eol,start
@@ -58,7 +58,7 @@ set scrolloff=4
 set sidescrolloff=4
 
 " search
-"set ignorecase
+set ignorecase
 set smartcase
 set incsearch
 set hlsearch
@@ -68,9 +68,9 @@ set number
 set relativenumber
 
 " cursor
-set cursorline
-set cursorlineopt=line
-set cursorcolumn
+"set cursorline
+"set cursorlineopt=line
+"set cursorcolumn
 
 " meta data
 set ruler
@@ -86,8 +86,8 @@ set matchtime=2
 "colorscheme evening
 "colorscheme desert
 set t_Co=256
-set termguicolors
 set background=dark
+"set termguicolors
 
 " statusline
 set laststatus=2
