@@ -11,9 +11,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'airblade/vim-gitgutter'
     Plug 'karb94/neoscroll.nvim'
+    Plug 'psliwka/vim-smoothie'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'morhetz/gruvbox'
 call plug#end()
 
 " syntax
@@ -99,14 +101,14 @@ set matchtime=2
 "colorscheme desert
 set t_Co=256
 set background=dark
-"set termguicolors
+set termguicolors
 
 " statusline
-"set laststatus=2
-"set statusline=
-"set statusline+=\ %F\ %M\ %Y\ %R\ %W
-"set statusline+=%=
-"set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set laststatus=2
+set statusline=
+set statusline+=\ %F\ %M\ %Y\ %R\ %W
+set statusline+=%=
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 
 " mapping
 let mapleader = ","
@@ -123,6 +125,7 @@ au TextYankPost * silent! lua vim.highlight.on_yank {timeout=150}
 " =======
 
 " airline
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled = 1
 
 " nerdtree
@@ -139,7 +142,9 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDToggleCheckAllLines = 1
 
 " neoscroll
-"lua require('neoscroll').setup()
+if !has('nvim')
+    lua require('neoscroll').setup()
+endif
 
 " fzf
 nnoremap <leader>o :Files<cr>
@@ -182,8 +187,8 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "\<Tab>"
+"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -215,3 +220,17 @@ let g:coc_global_extensions = [
     \ 'coc-emmet',
     \ 'coc-docker',
   \ ]
+
+" gruvbox
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+let g:gruvbox_contrast_dark = "hard"
+let g:gruvbox_contrast_light = "hard"
+let g:gruvbox_sign_column = "bg0"
+colorscheme gruvbox
