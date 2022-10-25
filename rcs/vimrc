@@ -65,12 +65,12 @@ set hlsearch
 
 " numbers
 set number
-set relativenumber
+"set relativenumber
 
 " cursor
-"set cursorline
-"set cursorlineopt=line
-"set cursorcolumn
+set cursorline
+set cursorlineopt=line
+set cursorcolumn
 
 " meta data
 set ruler
@@ -82,12 +82,9 @@ set showmatch
 set matchtime=2
 
 " colors
-"colorscheme morning
-"colorscheme evening
-"colorscheme desert
 set t_Co=256
-set background=dark
-"set termguicolors
+"set background=dark
+set termguicolors
 
 " statusline
 set laststatus=2
@@ -95,6 +92,3 @@ set statusline=
 set statusline+=\ %F\ %M\ %Y\ %R\ %W
 set statusline+=%=
 set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
-
-" mapping
-let mapleader = ","
