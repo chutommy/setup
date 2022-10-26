@@ -32,11 +32,11 @@ sudo ufw enable
 
 # ubuntu restricted extras
 echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
-sudo apt-get install ttf-mscorefonts-installer
+sudo apt-get -y install ttf-mscorefonts-installer
 sudo apt-get -y install ubuntu-restricted-extras
 
 # customization
-sudo apt-get -y install gnome-tweak-tool
+sudo apt-get -y install gnome-tweaks
 
 # apps
 sudo snap install gimp
