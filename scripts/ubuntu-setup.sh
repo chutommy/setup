@@ -37,6 +37,7 @@ sudo apt-get -y install ubuntu-restricted-extras
 
 # customization
 sudo apt-get -y install gnome-tweaks
+sudo apt install libfuse2
 
 # apps
 sudo snap install gimp
