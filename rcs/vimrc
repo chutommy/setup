@@ -30,8 +30,9 @@ set listchars=tab:··>,trail:·,nbsp:_
 
 set showcmd
 set showmode
-
+set ruler
 set laststatus=2
+
 set statusline=
 set statusline+=\ %F\ %M\ %Y\ %R\ %W
 set statusline+=%=
