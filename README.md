@@ -1,5 +1,4 @@
 # setup
-by Tommy Chu
 
 ## Neovim
 
