@@ -17,6 +17,8 @@ sudo apt-get -y upgrade
 sudo apt-get -y install git-all
 git config --global user.name "chutommy"
 git config --global user.email "tommychu2256@gmail.com"
+git config --global core.editor vim
+
 
 # performance
 sudo apt-get -y install preload
