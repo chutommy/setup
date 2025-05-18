@@ -36,4 +36,5 @@ set laststatus=2
 set statusline=
 set statusline+=\ %F\ %M\ %Y\ %R\ %W
 set statusline+=%=
-set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
+set statusline+=\ ascii:\ %b\ hex:\ 0x%B
+set statusline+=\ row:\ %l\ col:\ %c\ percent:\ %p%%
