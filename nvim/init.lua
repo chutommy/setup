@@ -16,14 +16,21 @@ vim.o.undofile = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.signcolumn = "yes"
+vim.o.wrap = false
 
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
 vim.o.splitright = true
 vim.o.splitbelow = true
 
+vim.o.tabstop = 4
+vim.o.scrolloff = 8
+vim.o.expandtab = true
+vim.o.shiftwidth = 2
+vim.o.softtabstop = 2
+
 vim.o.list = true
-vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.listchars = { tab = "> ", trail = ".", nbsp = "_" }
 
 vim.o.inccommand = "split"
 vim.o.cursorline = false
@@ -219,19 +226,6 @@ require("lazy").setup({
 					map("gO", require("telescope.builtin").lsp_document_symbols, "Open Document Symbols")
 					map("gW", require("telescope.builtin").lsp_dynamic_workspace_symbols, "Open Workspace Symbols")
 					map("grt", require("telescope.builtin").lsp_type_definitions, "[G]oto [T]ype Definition")
-					--
-					-- resolves a difference between neovim nightly (version 0.11) and stable (version 0.10)
-					---@param client vim.lsp.Client
-					---@param method vim.lsp.protocol.Method
-					---@param bufnr? integer some lsp support methods only in specific files
-					---@return boolean
-					local function client_supports_method(client, method, bufnr)
-						if vim.fn.has("nvim-0.11") == 1 then
-							return client:supports_method(method, bufnr)
-						else
-							return client.supports_method(method, { bufnr = bufnr })
-						end
-					end
 				end,
 			})
 			vim.diagnostic.config({
@@ -258,6 +252,7 @@ require("lazy").setup({
 				-- see `:help lspconfig-all`
 				clangd = {},
 				pyright = {},
+				neocmakelsp = {},
 				lua_ls = {
 					settings = {
 						Lua = {
@@ -317,7 +312,7 @@ require("lazy").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				cpp = { "clang-format" },
-				python = { "ruff" },
+				python = { "ruff_format" },
 			},
 		},
 	},
@@ -429,8 +424,39 @@ require("lazy").setup({
 			"MunifTanjim/nui.nvim",
 		},
 		lazy = false,
-		keys = { { "<leader>e", ":Neotree reveal<CR>", desc = "NeoTree reveal", silent = true } },
-		opts = { filesystem = { window = { mappings = { ["<leader>e"] = "close_window" } } } },
+		keys = {
+			{ "<leader>e", ":Neotree reveal<CR>", desc = "NeoTree reveal", silent = true },
+		},
+		opts = {
+			default_component_configs = {
+				icon = {
+					folder_closed = "+",
+					folder_open = "-",
+					default = " ",
+				},
+				modified = { symbol = "[+]" },
+				git_status = {
+					symbols = {
+						added = "A",
+						modified = "M",
+						deleted = "D",
+						renamed = "R",
+						untracked = "?",
+						ignored = "!",
+						unstaged = "U",
+						staged = "S",
+						conflict = "C",
+					},
+				},
+			},
+			filesystem = {
+				window = {
+					mappings = {
+						["<leader>e"] = "close_window",
+					},
+				},
+			},
+		},
 	},
 	{
 		"lewis6991/gitsigns.nvim",
@@ -487,27 +513,40 @@ require("lazy").setup({
 		config = function()
 			require("mini.ai").setup()
 			require("mini.surround").setup()
-			require("mini.pairs").setup()
+		end,
+	},
+	{
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = true,
+	},
+	{
+		"stevearc/oil.nvim",
+		---@module 'oil'
+		---@type oil.SetupOpts
+		opts = {},
+		lazy = false,
+		config = function()
+			require("oil").setup()
+			vim.keymap.set("n", "<leader>o", "<cmd>Oil<cr>", { desc = "Open Oil" })
 		end,
 	},
 }, {
 	ui = {
 		icons = {
-			cmd = "⌘",
-			config = "🛠",
-			event = "📅",
-			ft = "📂",
-			init = "⚙",
-			keys = "🗝",
-			plugin = "🔌",
-			runtime = "💻",
-			require = "🌙",
-			source = "📄",
-			start = "🚀",
-			task = "📌",
-			lazy = "💤 ",
+			cmd = "",
+			config = "",
+			event = "",
+			ft = "",
+			init = "",
+			keys = "",
+			plugin = "",
+			runtime = "",
+			require = "",
+			source = "",
+			start = "",
+			task = "",
+			lazy = "",
 		},
 	},
 })
-
--- vim: ts=2 sts=2 sw=2 et
