@@ -79,7 +79,7 @@ require("lazy").setup({
 		version = "*",
 		opts = {
 			size = 15,
-			open_mapping = [[<c-/>]],
+			open_mapping = [[<c-\>]],
 			shade_terminals = true,
 		},
 	},
